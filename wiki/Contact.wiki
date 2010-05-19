@@ -1,0 +1,10 @@
+#summary One-sentence summary of this page.
+
+= Contact =
+
+If you should have any questions regarding the car2go Open API, try the following steps:
+
+  * Read our wiki pages on car2go.googlecode.com
+  * Browse the API documentation we compiled for you
+  * See the group discussion for assistance. There might have been others with the same problem or an idea how to solve it.
+  * If that doesn't help, contact us at openapi@car2go.com 
