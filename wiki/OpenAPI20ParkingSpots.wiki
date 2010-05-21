@@ -17,44 +17,45 @@
                   <li>extendeddata - contains the usedCapacity and the totalCapacity of the parking spot as separate attributes</li>
                   </ul><h3>Response Examples</h3><div class="sample">A KML response example:
  <pre>
- &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
- &lt;kml xmlns:ns3=&quot;urn:oasis:names:tc:ciq:xsdschema:xAL:2.0&quot; xmlns:ns2=&quot;http://www.w3.org/2005/Atom&quot;
- 	xmlns=&quot;http://www.opengis.net/kml/2.2&quot;&gt;
- 	&lt;Document&gt;
- 		&lt;description&gt;CAR2GO Parking Lots&lt;/description&gt;
- 		&lt;Style id=&quot;car2go&quot;&gt;
- 			&lt;IconStyle&gt;
- 				&lt;Icon&gt;
- 					&lt;href&gt;http://www.car2go.com/default/img/backgrounds/Marker_Parking.png
- 					&lt;/href&gt;
- 				&lt;/Icon&gt;
- 				&lt;hotSpot y=&quot;0.0&quot; x=&quot;0.0&quot; /&gt;
- 			&lt;/IconStyle&gt;
- 		&lt;/Style&gt;
- 		&lt;Style id=&quot;car2go_excluded&quot;&gt;
- 			&lt;LineStyle&gt;
- 				&lt;color&gt;FF0000FF&lt;/color&gt;
- 			&lt;/LineStyle&gt;
- 		&lt;/Style&gt;
- 		&lt;Style id=&quot;car2go_included&quot;&gt;
- 			&lt;LineStyle&gt;
- 				&lt;color&gt;FF00FF00&lt;/color&gt;
- 			&lt;/LineStyle&gt;
- 		&lt;/Style&gt;
- 		&lt;Placemark&gt;
- 			&lt;name&gt;Inner City Parkspot 2&lt;/name&gt;
- 			&lt;description&gt;Capacity (used/total): 0/3&lt;/description&gt;
- 			&lt;styleUrl&gt;#car2go&lt;/styleUrl&gt;
- 			&lt;ExtendedData&gt;
- 				&lt;Data name=&quot;usedCapacity&quot;&gt;&lt;value&gt;0&lt;/value&gt;&lt;/Data&gt;
- 				&lt;Data name=&quot;totalCapacity&quot;&gt;&lt;value&gt;3&lt;/value&gt;&lt;/Data&gt;
- 			&lt;/ExtendedData&gt;
- 			&lt;Point&gt;
- 				&lt;coordinates&gt;9.983611,48.398565,0&lt;/coordinates&gt;
- 			&lt;/Point&gt;
- 		&lt;/Placemark&gt;
- 	&lt;/Document&gt;
- &lt;/kml&gt;
+ {{{<?xml version="1.0" encoding="UTF-8" standalone="yes"?>}}}
+{{{<kml xmlns:ns3="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:ns2="http://www.w3.org/2005/Atom"
+ 	xmlns="http://www.opengis.net/kml/2.2">}}}
+ 	{{{<Document>}}}
+ 		{{{<description>}}}CAR2GO Parking Lots{{{</description>}}}
+ 		{{{<Style id="car2go">}}}
+ 			{{{<IconStyle>}}}
+ 				{{{<Icon>}}}
+ 					{{{<href>}}}http://www.car2go.com/default/img/backgrounds/Marker_Parking.png
+ 					{{{</href>}}}
+ 				{{{</Icon>}}}
+ 				{{{<hotSpot y="0.0" x="0.0" />}}}
+ 			{{{</IconStyle>}}}
+ 		{{{</Style>}}}
+ 		{{{<Style id="car2go_excluded">}}}
+ 			{{{<LineStyle>}}}
+ 				{{{<color>}}}FF0000FF{{{</color>}}}
+ 			{{{</LineStyle>}}}
+ 		{{{</Style>}}}
+ 		{{{<Style id="car2go_included">}}}
+ 			{{{<LineStyle>}}}
+ 				{{{<color>}}}FF00FF00{{{</color>}}}
+ 			{{{</LineStyle>}}}
+ 		{{{</Style>}}}
+ 		{{{<Placemark>}}}
+ 			{{{<name>}}}Inner City Parkspot 2{{{</name>}}}
+ 			{{{<description>}}}Capacity (used/total): 0/3{{{</description>}}}
+ 			{{{<styleUrl>}}}#car2go{{{</styleUrl>}}}
+ 			{{{<ExtendedData>}}}
+ 				{{{<Data name="usedCapacity">}}}{{{<value>}}}0{{{</value>}}}{{{</Data>}}}
+ 				{{{<Data name="totalCapacity">}}}{{{<value>}}}3{{{</value>}}}{{{</Data>}}}
+ 			{{{</ExtendedData>}}}
+ 			{{{<Point>}}}
+ 				{{{<coordinates>}}}9.983611,48.398565,0{{{</coordinates>}}}
+ 			{{{</Point>}}}
+ 		{{{</Placemark>}}}
+ 	{{{</Document>}}}
+ {{{</kml>}}}
+
 </pre></div><div class="sample">A JSON response example:
  
                          <pre>
