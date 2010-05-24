@@ -1,6 +1,7 @@
 #summary Gasstations (v2.0 rev1.0)
+#sidebar OpenAPIv20r10Sidebar
 
-[OpenAPIv20r10FunctionIndex Function Index]
+[OpenAPIDocIndex  OpenAPI Documentation Index]
 
 <h1>Get all gas stations (v2.0 rev1.0)</h1><p>Provides a list of car2go gas stations in context of specific location like ulm or austin in KML format.
 <p>
