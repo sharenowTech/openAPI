@@ -1,6 +1,6 @@
 #summary ParkingSpots (v2.0 rev1.0)
 
-[OpenAPIv20r10FunctionIndex]
+[OpenAPIv20r10FunctionIndex Function Index]
 
 <h1> Get all parking spots</h1><p>Provides a list of car2go parking spots for a specific location like ulm or austin in KML format.
               <p>
