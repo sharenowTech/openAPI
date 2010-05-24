@@ -7,10 +7,10 @@ we offer access to protected functions for registered developers. This
 way you can write applications that manages bookings for a user.</p>
 <h2>Table of contents</h2>
 <ul class="toc">
-<li>[OpenAPIv20r10FunctionIndex car2go API v2.0 Functions and Endpoint Overview]</li>
-<li>[OpenAPIv20r10ReturnValues car2go API v2.0 Return Values Overview]</li>
+<li>[OpenAPIv20r10FunctionIndex v2.0 Functions and Endpoint Overview]</li>
+<li>[OpenAPIv20r10ReturnValues v2.0 Return Values Overview]</li>
 <li>[OpenAPIOAuthr10 Access protected functions via OAuth]</li>
-<li>[OpenAPIv10FunctionIndex car2go API v1.0 (deprecated)]</li>
+<li>[OpenAPIv10FunctionIndex v1.0 (deprecated)]</li>
 <li>[http://www.car2go.com/api/tou.htm Terms of usage (www.car2go.com)]</li>
 </ul>
 <h2>Further Reading</h2>
