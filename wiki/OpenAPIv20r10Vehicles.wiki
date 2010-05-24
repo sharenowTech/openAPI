@@ -1,6 +1,7 @@
 #summary Vehicles (v2.0 rev1.0)
+#sidebar OpenAPIv20r10Sidebar
 
-[OpenAPIv20r10FunctionIndex Function Index]
+[OpenAPIDocIndex  OpenAPI Documentation Index]
 
 <h1>Get all free vehicles (v2.0 rev1.0)</h1><p>Provides a list of all free car2go vehicles for a given location like ulm or austin in KML format.
 <p>KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. More information about KML can be found here: <a href="http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html" target="_blank">KML Reference at code.google.com</a>
