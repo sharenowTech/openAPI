@@ -7,7 +7,7 @@ we offer access to protected functions for registered developers. This
 way you can write applications that manages bookings for a user.</p>
 <h2>Table of contents</h2>
 <ul class="toc">
-<li>[OpenAPIr20v1FunctionIndex car2go API v2.0]</li>
+<li>[OpenAPIr20v10FunctionIndex car2go API v2.0]</li>
 <li>[OpenAPIOAuthr10 Access protected functions via OAuth]</li>
 <li>[OpenAPIr10FunctionIndex car2go API v1.0 (deprecated)]</li>
 <li>[http://www.car2go.com/api/tou.htm Terms of usage (www.car2go.com)]</li>
