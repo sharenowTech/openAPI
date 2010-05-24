@@ -2,7 +2,7 @@
 
 [OpenAPIv20r10FunctionIndex Function Index]
 
-<h1> Get all parking spots</h1><p>Provides a list of car2go parking spots for a specific location like ulm or austin in KML format.
+<h1>Get all parking spots (v2.0 rev1.0)</h1><p>Provides a list of car2go parking spots for a specific location like ulm or austin in KML format.
               <p>
               KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps
               for mobile. More information about KML can be found here: 
