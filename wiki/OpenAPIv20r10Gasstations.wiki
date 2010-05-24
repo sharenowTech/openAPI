@@ -46,4 +46,5 @@ The gas stations can be used to refuel a car2go. The customer can use the car2go
 <pre>
  {"placemarks":[{"coordinates":"[9.987988,48.358829,0]","name":"Shell, Hauptstraﬂe 12"},{"coordinates":"[9.990183,48.404832,0]","name":"Shell, Karlstraﬂe 38"}]}
  </pre></div>
-<div class="footer">&copy; 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
+
+<div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
