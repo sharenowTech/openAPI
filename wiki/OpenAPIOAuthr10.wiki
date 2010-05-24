@@ -147,4 +147,4 @@ car2go. Send us a E-Mail: <a href="mailto:openapi@car2go.com">openapi@car2go.com
 	</tr>
 
 </table>
-<div class="footer">&copy; 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
+<div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
