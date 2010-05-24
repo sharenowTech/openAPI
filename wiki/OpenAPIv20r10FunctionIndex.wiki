@@ -3,7 +3,7 @@
 
 [OpenAPIDocIndex  OpenAPI Documentation Index]
 
-<h1>car2go API v2.0</h1><a name="endpoints"><h2>Functions and Endpoints</h2></a>
+<h1>car2go API v2.0</h1><a name="endpoints"><h2>Functions and Endpoints Overview</h2></a>
 <table><thead><tr><th>Name</th><th>Method</th><th>Url</th><th>Access</th></tr></thead>
 <tr><td>[OpenAPIv20r10ParkingSpots Get all parking Spots]</td>
 <td>GET</td><td>http://www.car2go.com/api/v2.0/parkingspots</td><td>public</td></tr>
