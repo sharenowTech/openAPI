@@ -2,12 +2,14 @@
 
 [OpenAPIv20r10FunctionIndex Function Index]
 
-<h1>Get bookings (v2.0 rev1.0)</h1><p>Provides a list of all current bookings of a user. Access to this function is restricted. See <a href="../oauth.html">OAuth
-              documentation</a> for more details.</p><table class="funcdetail"><tr><td class="funcdetailheader">Access:</td><td>protected</td></tr><tr><td class="funcdetailheader">URL:</td><td>https://www.car2go.com/api/v2.0/bookings</td></tr><tr><td class="funcdetailheader">Method:</td><td>GET</td></tr></table><h3>Parameters</h3><table class="parameters"><thead><tr><th>Name</th><th>Mandatory</th><th>Description</th></tr></thead><tbody><tr><td>loc</td><td>true</td><td> location identifier string of the user's home location, e.g. "ulm", "austin".</td></tr><tr><td>format</td><td>false</td><td> defines response format. Value "json" => JSON format, otherwise xml format is used</td></tr><tr><td>callback</td><td>false</td><td> defines JSONP (JSON with Padding) callback function used as wrapper</td></tr></tbody></table><h3>Request Examples</h3><div class="sample"><pre>
+<h1>Get bookings (v2.0 rev1.0)</h1><p>Provides a list of all current bookings of a user. Access to this function is restricted. See [OpenAPIOAuthr10 OAuth  documentation] for more details.</p><table class="funcdetail"><tr><td class="funcdetailheader">Access:</td><td>protected</td></tr><tr><td class="funcdetailheader">URL:</td><td>https://www.car2go.com/api/v2.0/bookings</td></tr><tr><td class="funcdetailheader">Method:</td><td>GET</td></tr></table>
+<h3>Parameters</h3><table class="parameters"><thead><tr><th>Name</th><th>Mandatory</th><th>Description</th></tr></thead><tbody><tr><td>loc</td><td>true</td><td> location identifier string of the user's home location, e.g. "ulm", "austin".</td></tr><tr><td>format</td><td>false</td><td> defines response format. Value "json" => JSON format, otherwise xml format is used</td></tr><tr><td>callback</td><td>false</td><td> defines JSONP (JSON with Padding) callback function used as wrapper</td></tr></tbody></table>
+<h3>Request Examples</h3><div class="sample"><pre>
  GET https://www.car2go.com/api/v2.0/bookings?loc=ulm&amp;format=json
  </pre></div><div class="sample"><pre>
  GET https://www.car2go.com/api/v2.0/bookings?loc=austin
- </pre></div><h3>Response</h3>Each booking consists of
+ </pre></div>
+<h3>Response</h3>Each booking consists of
                   <ul>
                   <li>returnValue - see list of return codes below and <a href="index.html#returnvalues">return values</a> for more details</li>
                   </ul>
@@ -27,56 +29,58 @@
                   <li>interior</li>
                   <li>exterior</li>
                   <li>position: longitude and latitude of vehicle</li>
-                  </ul><h3>Response Examples</h3><div class="sample">A XML response example:
+                  </ul>
+<h3>Response Examples</h3><div class="sample">A XML response example:
  
-                         <pre>
- &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
- &lt;c2g:bookingResponse xmlns:c2g=&quot;http://www.car2go.com/openapi/xmlschema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; &gt;
-   &lt;c2g:returnValue&gt;
-     &lt;c2g:code&gt;0&lt;/c2g:code&gt;
-     &lt;c2g:description&gt;Operation successful.&lt;/c2g:description&gt;
-   &lt;/c2g:returnValue&gt;  
-   &lt;c2g:booking&gt;
-     &lt;c2g:bookingId&gt;4321&lt;/c2g:bookingId&gt;
-     &lt;c2g:reservationTime&gt;2001-12-31T12:00:00+01:00&lt;/c2g:reservationTime&gt;
-     &lt;c2g:bookingposition&gt;
-         &lt;c2g:latitude&gt;48.4008&lt;/c2g:latitude&gt;
-         &lt;c2g:longitude&gt;9.9596&lt;/c2g:longitude&gt;
-         &lt;c2g:address&gt;Blaubeurer Straﬂe 128, 89077 Ulm&lt;/c2g:address&gt;
-     &lt;/c2g:bookingposition&gt;
-     &lt;c2g:account&gt;    
- 		&lt;c2g:accountId&gt;5678&lt;/c2g:accountId&gt;
- 		&lt;c2g:description&gt;Max Mustermann&lt;/c2g:description&gt;    
-     &lt;/c2g:account&gt;
-     &lt;c2g:vehicle&gt;
-       &lt;c2g:vin&gt;WME4513001K154451&lt;/c2g:vin&gt;
-       &lt;c2g:numberPlate&gt;UL-C5713&lt;/c2g:numberPlate&gt;
-       &lt;fuel&gt;90&lt;/fuel&gt; 
- † 	  &lt;interior&gt;EXCELLENT&lt;/interior&gt; 
- † 	  &lt;exterior&gt;EXCELLENT&lt;/exterior&gt; 
-       &lt;c2g:position&gt;
-         &lt;c2g:latitude&gt;48.4008&lt;/c2g:latitude&gt;
-         &lt;c2g:longitude&gt;9.9596&lt;/c2g:longitude&gt;
-         &lt;c2g:address&gt;Blaubeurer Straﬂe 128, 89077 Ulm&lt;/c2g:address&gt;
-       &lt;/c2g:position&gt;
-     &lt;/c2g:vehicle&gt;
-   &lt;/c2g:booking&gt;  
-   &lt;c2g:booking&gt;
-     &lt;c2g:bookingId&gt;4321&lt;/c2g:bookingId&gt;
-     &lt;c2g:reservationTime&gt;2001-12-31T13:00:00+01:00&lt;/c2g:reservationTime&gt;
-     &lt;c2g:bookingposition&gt;
-         &lt;c2g:latitude&gt;48.1048&lt;/c2g:latitude&gt;
-         &lt;c2g:longitude&gt;8.1591&lt;/c2g:longitude&gt;
-         &lt;c2g:address&gt;Lange Straﬂe 67, 82828 Groﬂstadt&lt;/c2g:address&gt;
-     &lt;/c2g:bookingposition&gt;
-     &lt;c2g:account&gt;
- 		&lt;c2g:accountId&gt;5678&lt;/c2g:accountId&gt;
- 		&lt;c2g:description&gt;Max Mustermann&lt;/c2g:description&gt;    
-     &lt;/c2g:account&gt; 
-   &lt;/c2g:booking&gt;
- &lt;/c2g:bookingResponse&gt;
- </pre></div><div class="sample">A JSON response example:
+<blockquote>
+ <?xml version="1.0" encoding="UTF-8"?>
+ {{{<c2g:bookingResponse xmlns:c2g="http://www.car2go.com/openapi/xmlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >}}}
+   {{{<c2g:returnValue>}}}
+     {{{<c2g:code>}}}0{{{</c2g:code>}}}
+     {{{<c2g:description>}}}Operation successful.{{{</c2g:description>}}}
+   {{{</c2g:returnValue>}}}  
+   {{{<c2g:booking>}}}
+     {{{<c2g:bookingId>}}}4321{{{</c2g:bookingId>}}}
+     {{{<c2g:reservationTime>}}}2001-12-31T12:00:00+01:00{{{</c2g:reservationTime>}}}
+     {{{<c2g:bookingposition>}}}
+         {{{<c2g:latitude>}}}48.4008{{{</c2g:latitude>}}}
+         {{{<c2g:longitude>}}}9.9596{{{</c2g:longitude>}}}
+         {{{<c2g:address>}}}Blaubeurer Straße 128, 89077 Ulm{{{</c2g:address>}}}
+     {{{</c2g:bookingposition>}}}
+     {{{<c2g:account>}}}    
+ 		{{{<c2g:accountId>}}}5678{{{</c2g:accountId>}}}
+ 		{{{<c2g:description>}}}Max Mustermann{{{</c2g:description>}}}    
+     {{{</c2g:account>}}}
+     {{{<c2g:vehicle>}}}
+       {{{<c2g:vin>}}}WME4513001K154451{{{</c2g:vin>}}}
+       {{{<c2g:numberPlate>}}}UL-C5713{{{</c2g:numberPlate>}}}
+       {{{<fuel>}}}90{{{</fuel>}}} 
+   	  {{{<interior>}}}EXCELLENT{{{</interior>}}} 
+   	  {{{<exterior>}}}EXCELLENT{{{</exterior>}}} 
+       {{{<c2g:position>}}}
+         {{{<c2g:latitude>}}}48.4008{{{</c2g:latitude>}}}
+         {{{<c2g:longitude>}}}9.9596{{{</c2g:longitude>}}}
+         {{{<c2g:address>}}}Blaubeurer Straße 128, 89077 Ulm{{{</c2g:address>}}}
+       {{{</c2g:position>}}}
+     {{{</c2g:vehicle>}}}
+   {{{</c2g:booking>}}}  
+   {{{<c2g:booking>}}}
+     {{{<c2g:bookingId>}}}4321{{{</c2g:bookingId>}}}
+     {{{<c2g:reservationTime>}}}2001-12-31T13:00:00+01:00{{{</c2g:reservationTime>}}}
+     {{{<c2g:bookingposition>}}}
+         {{{<c2g:latitude>}}}48.1048{{{</c2g:latitude>}}}
+         {{{<c2g:longitude>}}}8.1591{{{</c2g:longitude>}}}
+         {{{<c2g:address>}}}Lange Straße 67, 82828 Großstadt{{{</c2g:address>}}}
+     {{{</c2g:bookingposition>}}}
+     {{{<c2g:account>}}}
+ 		{{{<c2g:accountId>}}}5678{{{</c2g:accountId>}}}
+ 		{{{<c2g:description>}}}Max Mustermann{{{</c2g:description>}}}    
+     {{{</c2g:account>}}} 
+   {{{</c2g:booking>}}}
+ {{{</c2g:bookingResponse>}}}
+ </blockquote></div>
+<div class="sample">A JSON response example:
  
-                         <pre>
+ <pre>
  {&quot;returnValue&quot;:{&quot;code&quot;:0,&quot;description&quot;:&quot;Operation successful.&quot;},&quot;booking&quot;:[]}
  </pre></div><h3>Return Codes</h3>The following return codes may occur:<table><thead><tr><th>Code</th><th>Description</th><th>Note</th></tr></thead><tr><td>0</td><td>Operation successful.</td><td></td></tr><tr><td>1</td><td>Location invalid.</td><td></td></tr><tr><td>3</td><td>No valid accounts found.</td><td> The user has no valid accounts. This occurs when the user has no account and is not invited to any accounts.</td></tr><tr><td>4</td><td>Not all necessary url parameters provided.</td><td></td></tr><tr><td>5</td><td>A technical error occured.</td><td> This error can occur in case of application problems. If this error persist, please report the bug.</td></tr></table><div class="footer">&copy; 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
