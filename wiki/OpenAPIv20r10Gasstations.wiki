@@ -18,6 +18,7 @@ The gas stations can be used to refuel a car2go. The customer can use the car2go
                   <li>extendeddata - empty</li>
                   </ul>
 <h3>Response Examples</h3><div class="sample">
+<blockquote>
 {{{<Document>}}}
 {{{<description>}}}CAR2GO Gas Stations{{{</description>}}}
 {{{<Style id="car2go">}}}
@@ -38,7 +39,7 @@ The gas stations can be used to refuel a car2go. The customer can use the car2go
  			{{{</Point>}}}
  		{{{</Placemark>}}}
  	{{{</Document>}}}
-
+</blockquote>
 </div>
 <div class="sample">A JSON response example:
 <pre>
