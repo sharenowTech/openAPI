@@ -14,33 +14,29 @@
                   <li>description - empty</li>
                   <li>point- the coordinates of the gas station</li>
                   <li>extendeddata - empty</li>
-                  </ul><h3>Response Examples</h3><div class="sample"><pre>
- &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
- &lt;kml xmlns:ns3=&quot;urn:oasis:names:tc:ciq:xsdschema:xAL:2.0&quot; xmlns:ns2=&quot;http://www.w3.org/2005/Atom&quot;
- 	xmlns=&quot;http://www.opengis.net/kml/2.2&quot;&gt;
- 	&lt;Document&gt;
- 		&lt;description&gt;CAR2GO Gas Stations&lt;/description&gt;
- 		&lt;Style id=&quot;car2go&quot;&gt;
- 			&lt;IconStyle&gt;
- 				&lt;Icon&gt;
- 					&lt;href&gt;http://www.car2go.com/default/img/backgrounds/Marker_Fuel.png
- 					&lt;/href&gt;
- 				&lt;/Icon&gt;
- 				&lt;hotSpot y=&quot;0.0&quot; x=&quot;0.0&quot; /&gt;
- 			&lt;/IconStyle&gt;
- 		&lt;/Style&gt;
- 		&lt;Placemark&gt;
- 			&lt;name&gt;Shell, Europestreet 44&lt;/name&gt;
- 			&lt;description&gt;&lt;/description&gt;
- 			&lt;styleUrl&gt;#car2go&lt;/styleUrl&gt;
- 			&lt;ExtendedData /&gt;
- 			&lt;Point&gt;
- 				&lt;coordinates&gt;10.033742,48.38719,0&lt;/coordinates&gt;
- 			&lt;/Point&gt;
- 		&lt;/Placemark&gt;
- 	&lt;/Document&gt;
- &lt;/kml&gt;
- </pre></div><div class="sample">A JSON response example:
+                  </ul><h3>Response Examples</h3><div class="sample">
+<pre><Document>
+<description>CAR2GO Gas Stations</description>
+<Style id="car2go">
+ 			<IconStyle>
+ 				<Icon>
+ 					<href>http://www.car2go.com/default/img/backgrounds/Marker_Fuel.png
+ 					</href>
+ 				</Icon>
+ 				<hotSpot y="0.0" x="0.0" />
+ 			</IconStyle>
+ 		</Style>
+ 		<Placemark>
+ 			<name>Shell, Europestreet 44</name>
+ 			<description></description>
+ 			<styleUrl>#car2go</styleUrl>
+ 			<ExtendedData />
+ 			<Point>
+ 				<coordinates>10.033742,48.38719,0</coordinates>
+ 			</Point>
+ 		</Placemark>
+ 	</Document></pre>
+</div><div class="sample">A JSON response example:
  
                          <pre>
  {"placemarks":[{"coordinates":"[9.987988,48.358829,0]","name":"Shell, Hauptstraﬂe 12"},{"coordinates":"[9.990183,48.404832,0]","name":"Shell, Karlstraﬂe 38"}]}
