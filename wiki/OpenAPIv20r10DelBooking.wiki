@@ -1,5 +1,4 @@
 #summary CancelBooking (v2.0 rev1.0)
-
 #sidebar OpenAPIv20r10Sidebar
 
 [OpenAPIv20r10FunctionIndex Function Index]
