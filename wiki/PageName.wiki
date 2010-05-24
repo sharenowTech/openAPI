@@ -1,0 +1,3 @@
+#summary OpenAPIr20v1Navi
+
+* [OpenAPIOAuthr10 OAuth  documentation]
