@@ -1,5 +1,7 @@
 #summary Access protected functions via OAuth (rev1.0)
 
+[OpenAPIDocIndex  OpenAPI Documentation Index]
+
 <h1>Access protected functions via OAuth (rev1.0)</h1>
 <p>Some API functions are marked as protected. You need to
 authenticate via OAuth to access these functions.<br />
