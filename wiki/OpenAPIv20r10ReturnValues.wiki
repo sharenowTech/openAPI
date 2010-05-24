@@ -1,0 +1,9 @@
+#summary One-sentence summary of this page.
+#sidebar OpenAPIv20r10Sidebar
+
+[OpenAPIDocIndex  OpenAPI Documentation Index]
+
+<h2>Return values</h2>Response format is defined in <a href="http://www.car2go.com/api/v2.0/openapi.xsd">openapi.xsd</a><br/><br/>The following return codes may occur:<table><thead><tr><th>Code</th><th>Description</th></tr></thead><tr><td>0</td><td>Operation successful.</td></tr><tr><td>1</td><td>Location invalid.</td></tr><tr><td>2</td><td>UserId invalid.</td></tr><tr><td>3</td><td>No valid accounts found.</td></tr><tr><td>4</td><td>Not all necessary url parameters provided.</td></tr><tr><td>5</td><td>A technical error occured.</td></tr><tr><td>6</td><td>Invalid url parameter provided.</td></tr><tr><td>7</td><td>No valid driver license information could be found.</td></tr><tr><td>8</td><td>The account is locked.</td></tr><tr><td>9</td><td>The vehicle can not be booked.</td></tr><tr><td>10</td><td>Vehicle invalid.</td></tr><tr><td>11</td><td>Booking id invalid.</td></tr><tr><td>12</td><td>No reserved vehicle found.</td></tr></table>
+
+
+Some API functions result in KML response. More information can be found here: <a  target="_blank" href="http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html">KML Reference at code.google.com</a><br/>
