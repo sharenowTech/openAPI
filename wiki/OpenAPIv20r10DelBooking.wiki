@@ -1,5 +1,7 @@
 #summary CancelBooking (v2.0 rev1.0)
 
+#sidebar OpenAPIv20r10Sidebar
+
 [OpenAPIv20r10FunctionIndex Function Index]
 
 <h1>Cancel booking (v2.0 rev1.0)</h1><p>This function provides cancellation of an existing booking. Currently only HTTP DELETE is allowed. Access to this function is restricted. See [OpenAPIOAuthr10 OAuth  documentation] for more details.</p><table class="funcdetail"><tr><td class="funcdetailheader">Access:</td><td>protected</td></tr><tr><td class="funcdetailheader">URL:</td><td>https://www.car2go.com/api/v2.0/booking/&lt;bookingId&gt;</td></tr><tr><td class="funcdetailheader">Method:</td><td>DELETE</td></tr></table>
