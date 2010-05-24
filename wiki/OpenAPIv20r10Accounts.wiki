@@ -15,31 +15,32 @@
                   <li>description - detailed description of the account</li>
                   </ul>
                   </li>
-                  </ul><h3>Response Examples</h3><div class="sample">A XML response example where user has valid account:
+                  </ul>
+<h3>Response Examples</h3><div class="sample">A XML response example where user has valid account:
+<blockquote>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  	{{{<accountResponse xmlns="http://www.car2go.com/openapi/xmlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">}}}
+ 		{{{<returnValue>}}}
+ 			{{{<code>}}}0{{{</code>}}}
+ 			{{{<description>}}}Operation successful.{{{</description>}}}
+ 		{{{</returnValue>}}}
+ 		{{{<account>}}}
+ 			{{{<accountId>}}}58{{{</accountId>}}}
+ 			{{{<description>}}}{{{</description>}}}
+ 		{{{</account>}}}
+ 	{{{</accountResponse>}}}
+</blockquote></div>
+<div class="sample">A XML response example where user does not have valid account:
  
-                         <pre>
- &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
-  	&lt;accountResponse xmlns=&quot;http://www.car2go.com/openapi/xmlschema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
- 		&lt;returnValue&gt;
- 			&lt;code&gt;0&lt;/code&gt;
- 			&lt;description&gt;Operation successful.&lt;/description&gt;
- 		&lt;/returnValue&gt;
- 		&lt;account&gt;
- 			&lt;accountId&gt;58&lt;/accountId&gt;
- 			&lt;description&gt;&lt;/description&gt;
- 		&lt;/account&gt;
- 	&lt;/accountResponse&gt;
-</pre></div><div class="sample">A XML response example where user does not have valid account:
- 
-                         <pre>
- &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
-  	&lt;accountResponse xmlns=&quot;http://www.car2go.com/openapi/xmlschema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
- 		&lt;returnValue&gt;
- 			&lt;code&gt;3&lt;/code&gt;
- 			&lt;description&gt;No valid accounts found.&lt;/description&gt;
- 		&lt;/returnValue&gt;
- 	&lt;/accountResponse&gt;
-</pre></div><div class="sample">A JSON response example:
+<blockquote>
+ <?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?>
+  	{{{<accountResponse xmlns="http://www.car2go.com/openapi/xmlschema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">}}}
+ 		{{{<returnValue>}}}
+ 			{{{<code>}}}3{{{</code>}}}
+ 			{{{<description>}}}No valid accounts found.{{{</description>}}}
+ 		{{{</returnValue>}}}
+ 	{{{</accountResponse>}}}
+</blockquote></div><div class="sample">A JSON response example:
  
                          <pre>
  {&quot;returnValue&quot;:{&quot;code&quot;:0,&quot;description&quot;:&quot;Operation successful.&quot;},&quot;account&quot;:[{&quot;accountId&quot;:994,&quot;description&quot;:&quot;Max Mustermann11585&quot;}]}
