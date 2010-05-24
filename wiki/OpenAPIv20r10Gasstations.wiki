@@ -14,28 +14,30 @@
                   <li>description - empty</li>
                   <li>point- the coordinates of the gas station</li>
                   <li>extendeddata - empty</li>
-                  </ul><h3>Response Examples</h3><div class="sample">
-<pre><Document>
-<description>CAR2GO Gas Stations</description>
-<Style id="car2go">
- 			<IconStyle>
- 				<Icon>
- 					<href>http://www.car2go.com/default/img/backgrounds/Marker_Fuel.png
- 					</href>
- 				</Icon>
- 				<hotSpot y="0.0" x="0.0" />
- 			</IconStyle>
- 		</Style>
- 		<Placemark>
- 			<name>Shell, Europestreet 44</name>
- 			<description></description>
- 			<styleUrl>#car2go</styleUrl>
- 			<ExtendedData />
- 			<Point>
- 				<coordinates>10.033742,48.38719,0</coordinates>
- 			</Point>
- 		</Placemark>
- 	</Document></pre>
+                  </ul>
+<h3>Response Examples</h3><div class="sample">
+{{{<Document>}}}
+{{{<description>}}}CAR2GO Gas Stations{{{</description>}}}
+{{{<Style id="car2go">}}}
+ 			{{{<IconStyle>}}}
+ 				{{{<Icon>}}}
+ 					{{{<href>}}}http://www.car2go.com/default/img/backgrounds/Marker_Fuel.png
+ 					{{{</href>}}}
+ 				{{{</Icon>}}}
+ 				{{{<hotSpot y="0.0" x="0.0" />}}}
+ 			{{{</IconStyle>}}}
+ 		{{{</Style>}}}
+ 		{{{<Placemark>}}}
+ 			{{{<name>}}}Shell, Europestreet 44{{{</name>}}}
+ 			{{{<description>}}}{{{</description>}}}
+ 			{{{<styleUrl>}}}#car2go{{{</styleUrl>}}}
+ 			{{{<ExtendedData />}}}
+ 			{{{<Point>}}}
+ 				{{{<coordinates>}}}10.033742,48.38719,0{{{</coordinates>}}}
+ 			{{{</Point>}}}
+ 		{{{</Placemark>}}}
+ 	{{{</Document>}}}
+
 </div><div class="sample">A JSON response example:
  
                          <pre>
