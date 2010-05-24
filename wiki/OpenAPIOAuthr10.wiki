@@ -31,19 +31,19 @@ car2go. Send us a E-Mail: <a href="mailto:openapi@car2go.com">openapi@car2go.com
 
 	<tr>
 		<td>Get request token</td>
-		<td>https://www.car2go.com/api/reqtoken</td>
+		<td>[https://www.car2go.com/api/reqtoken]</td>
 		<td>Token is valid for some hours.</td>
 	</tr>
 
 	<tr>
 		<td>Authorize token</td>
-		<td>https://www.car2go.com/api/authorize</td>
+		<td>[https://www.car2go.com/api/authorize]</td>
 		<td>Pass request token as parameter, e.g. "?oauth_token=[token]"</td>
 	</tr>
 
 	<tr>
 		<td>Get access token</td>
-		<td>https://www.car2go.com/api/accesstoken</td>
+		<td>[https://www.car2go.com/api/accesstoken]</td>
 		<td>Token is valid for about one month. User can revoke token via
 		car2go portal.</td>
 	</tr>
@@ -51,8 +51,7 @@ car2go. Send us a E-Mail: <a href="mailto:openapi@car2go.com">openapi@car2go.com
 </table>
 
 <a name="errorcodes" ><h2>Error codes</h2></a>
-<p>Error codes are based on <a target="_blank"
-	href="http://wiki.oauth.net/ProblemReporting">Problem Reporting
+<p>Error codes are based on <a target="_blank" href="http://wiki.oauth.net/ProblemReporting">Problem Reporting
 (oauth.net)</a>.</p>
 <table>
 	<thead>
