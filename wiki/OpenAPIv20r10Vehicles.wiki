@@ -35,8 +35,7 @@
                   </ul>
 <h3>Response Examples</h3>
 <div class="sample"><blockquote>
-<kml xmlns:ns3="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:ns2="http://www.w3.org/2005/Atom"
- 	xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns:ns3="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:ns2="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
  	{{{<Document>}}}
  		{{{<description>}}}Available CAR2GO Vehicles{{{</description>}}}
  		{{{<Style id="car2go">}}}
