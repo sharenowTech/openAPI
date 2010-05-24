@@ -1,0 +1,77 @@
+#summary Vehicles (v2.0 rev1.0)
+
+[OpenAPIv20r10FunctionIndex Function Index]
+
+<h1>Get all free vehicles (v2.0 rev1.0)</h1><p>Provides a list of all free car2go vehicles for a given location like ulm or austin in KML format.
+              <p>
+              KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. More information about KML can be found here: <a href="http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html" target="_blank">KML Reference at code.google.com</a>
+              </p></p><table class="funcdetail"><tr><td class="funcdetailheader">Access:</td><td>public</td></tr><tr><td class="funcdetailheader">URL:</td><td>http://www.car2go.com/api/v2.0/vehicles</td></tr><tr><td class="funcdetailheader">Method:</td><td>GET</td></tr></table><h3>Parameters</h3><table class="parameters"><thead><tr><th>Name</th><th>Mandatory</th><th>Description</th></tr></thead><tbody><tr><td>loc</td><td>true</td><td> location identifier string of the home location for which the vehicles are searched for, e.g. "ulm", "austin".</td></tr><tr><td>format</td><td>false</td><td> defines response format. Value "json" => JSON format, otherwise xml format is used</td></tr></tbody></table><h3>Request Examples</h3><div class="sample"><pre>GET http://www.car2go.com/api/v2.0/vehicles?loc=ulm</pre></div><div class="sample"><pre>GET http://www.car2go.com/api/v2.0/vehicles?loc=austin&format=json</pre></div><h3>Response</h3>The response is provided as KML file which defines a placemark tag for each free car2go vehicle. The placemark tag
+                  defines following sub tags:
+                  <ul>
+                  <li>name - contains the license plate of the vehicle</li>
+                  <li>description - contains the address, the interior, the exterior state and the fuel level of the vehicle. The address,
+                  the interior state, the exterior state and the fuel are also defined in the extendeddata tag.</li>
+                  <li>point - the coordinates of the vehicle</li>
+                  <li>extendeddata - the extended data contains the vehicle identification number(vin), the address, the interior state,
+                  the exterior state and the fuel level of the vehicle.
+                  <ul>
+                  The interior and exterior state can contain one of the following values:
+                  <li>EXCELLENT</li>
+                  <li>GOOD</li>
+                  <li>UNACCEPTABLE</li>
+                  <li>ISSUESEXIST</li>
+                  </ul>
+                  <ul>
+                  The fuel value is the percentage of fuel left in the fuel tank. 100 means the fuel tank is full. A 0 value means the
+                  fuel tank is empty.
+                  </ul>
+                  <ul>
+                  The vin is the vehicle identification number of the car2go. The vehicle identification number is a unique id for a
+                  car2go vehicle.
+                  </ul>
+                  </li>
+                  </ul><h3>Response Examples</h3><div class="sample"><pre>
+ &lt;kml xmlns:ns3=&quot;urn:oasis:names:tc:ciq:xsdschema:xAL:2.0&quot; xmlns:ns2=&quot;http://www.w3.org/2005/Atom&quot;
+ 	xmlns=&quot;http://www.opengis.net/kml/2.2&quot;&gt;
+ 	&lt;Document&gt;
+ 		&lt;description&gt;Available CAR2GO Vehicles&lt;/description&gt;
+ 		&lt;Style id=&quot;car2go&quot;&gt;
+ 			&lt;IconStyle&gt;
+ 				&lt;Icon&gt;
+ 					&lt;href&gt;http://www.car2go.com/default/img/backgrounds/Marker_car2go.png
+ 					&lt;/href&gt;
+ 				&lt;/Icon&gt;
+ 				&lt;hotSpot y=&quot;0.0&quot; x=&quot;0.0&quot; /&gt;
+ 			&lt;/IconStyle&gt;
+ 		&lt;/Style&gt;
+ 		&lt;Placemark&gt;
+ 			&lt;name&gt;UL-C5887&lt;/name&gt;
+ 			&lt;description&gt;Sudetenweg, 89075 Ulm&lt;br/&gt;Fuel
+ 				24&lt;br/&gt;Interior EXCELLENT&lt;br/&gt;Exterior EXCELLENT
+ 			&lt;/description&gt;
+ 			&lt;styleUrl&gt;#car2go&lt;/styleUrl&gt;
+ 			&lt;ExtendedData&gt;
+ 				&lt;Data name=&quot;fuel&quot;&gt;
+ 					&lt;value&gt;24&lt;/value&gt;
+ 				&lt;/Data&gt;
+ 				&lt;Data name=&quot;interior&quot;&gt;
+ 					&lt;value&gt;EXCELLENT&lt;/value&gt;
+ 				&lt;/Data&gt;
+ 				&lt;Data name=&quot;exterior&quot;&gt;
+ 					&lt;value&gt;EXCELLENT&lt;/value&gt;
+ 				&lt;/Data&gt;
+ 				&lt;Data name=&quot;vin&quot;&gt;
+ 					&lt;value&gt;WME4513001K154655&lt;/value&gt;
+ 				&lt;/Data&gt;
+ 			&lt;/ExtendedData&gt;
+ 			&lt;Point&gt;
+ 				&lt;coordinates&gt;10.029,48.4362,0&lt;/coordinates&gt;
+ 			&lt;/Point&gt;
+ 		&lt;/Placemark&gt;
+ 	&lt;/Document&gt;
+ &lt;/kml&gt;
+ </pre></div><div class="sample">A JSON response example:
+ 
+                         <pre>
+ {"placemarks":[{"address":"Reuttier Straﬂe 133, 89231 Neu-Ulm","coordinates":"[10.023925,48.383125,0]","exterior":"EXCELLENT","fuel":"98","interior":"EXCELLENT","name":"UL-C5704","vin":"WME4513001K155530"}]}
+ </pre></div><div class="footer">&copy; 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
