@@ -1,6 +1,6 @@
 #summary v2.0 r1.0 Sidebar
 
-OpenAPI v2.0 rev1.0 Functions
+==OpenAPI v2.0 rev1.0 Functions==
 
 * [OpenAPIv20r10ParkingSpots Get all parking Spots]
 
