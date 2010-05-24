@@ -66,4 +66,6 @@ The parking spots are especially dedicated for car2go vehicles.</p></p><table cl
  
                          <pre>
   {"placemarks":[{"coordinates":"[-97.750983,30.269577,0]","name":"West Ave","totalCapacity":"4","usedCapacity":"0"},{"coordinates":"[-97.74225,30.265976,0]","name":"100 East 4th Street","totalCapacity":"4","usedCapacity":"0"}]}
- </pre></div><div class="footer">&copy; 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
+ </pre></div>
+
+<div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
