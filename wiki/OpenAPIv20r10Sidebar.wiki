@@ -2,20 +2,12 @@
 
 *OpenAPI v2.0 rev1.0 Functions*
 
-* [OpenAPIv20r10ParkingSpots Get all parking Spots]
-
-* [OpenAPIv20r10Locations Get all locations]
-
-* [OpenAPIv20r10Gasstations Get all gas stations]
-
-* [OpenAPIv20r10Vehicles Get all free vehicles]
-
-* [OpenAPIv20r10Accounts Get all accounts]
-
-* [OpenAPIv20r10GetBookings Get bookings]
-
-* [OpenAPIv20r10CreateBooking Create booking]
-
-* [OpenAPIv20r10GetBooking Get booking]
-
-* [OpenAPIv20r10DelBooking Cancel booking]
+ * [OpenAPIv20r10ParkingSpots Get all parking Spots]
+ * [OpenAPIv20r10Locations Get all locations]
+ * [OpenAPIv20r10Gasstations Get all gas stations]
+ * [OpenAPIv20r10Vehicles Get all free vehicles]
+ * [OpenAPIv20r10Accounts Get all accounts]
+ * [OpenAPIv20r10GetBookings Get bookings]
+ * [OpenAPIv20r10CreateBooking Create booking]
+ * [OpenAPIv20r10GetBooking Get booking]
+ * [OpenAPIv20r10DelBooking Cancel booking]
