@@ -1,6 +1,6 @@
 #summary OpenAPI Documentation Index
 
-==car2go API Documentation==
+==car2go OpenAPI Documentation==
 <p>The car2go API offers access to up-to-date car2go information
 such as vehicles available, parking spots and gas stations. <br/>Furthermore
 we offer access to protected functions for registered developers. This
