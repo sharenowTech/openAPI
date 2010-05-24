@@ -1,9 +1,10 @@
 #summary Function Index (v2.0 r1.0)
-[OpenAPIv20r10ParkingSpots]
+
 []
 <h1>car2go API v2.0</h1><a name="endpoints"><h2>Endpoints</h2></a>
 <table><thead><tr><th>Name</th><th>Method</th><th>Url</th><th>Access</th></tr></thead>
-<tr><td>[OpenAPI20r10ParkingSpots Get all parking Spots]</td><td>GET</td><td>http://www.car2go.com/api/v2.0/parkingspots</td><td>public</td></tr>
+<tr><td>[OpenAPIv20r10ParkingSpots Get all parking Spots]</td>
+<td>GET</td><td>http://www.car2go.com/api/v2.0/parkingspots</td><td>public</td></tr>
 
 <tr><td><a href="locations.html"> Get all locations</a></td><td>GET</td><td>http://www.car2go.com/api/v2.0/locations</td><td>public</td></tr>
 
