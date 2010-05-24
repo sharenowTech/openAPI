@@ -12,4 +12,7 @@ way you can write applications that manages bookings for a user.</p>
 <li>[OpenAPIv10FunctionIndex car2go API v1.0 (deprecated)]</li>
 <li>[http://www.car2go.com/api/tou.htm Terms of usage (www.car2go.com)]</li>
 </ul>
-<div class="footer">&copy; 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
+<h2>Further Reading</h2>
+ *
+ * 
+<div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
