@@ -78,4 +78,6 @@
  
                          <pre>
  {"placemarks":[{"address":"Reuttier Straﬂe 133, 89231 Neu-Ulm","coordinates":"[10.023925,48.383125,0]","exterior":"EXCELLENT","fuel":"98","interior":"EXCELLENT","name":"UL-C5704","vin":"WME4513001K155530"}]}
- </pre></div><div class="footer">&copy; 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
+ </pre></div>
+
+<div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
