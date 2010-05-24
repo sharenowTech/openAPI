@@ -2,32 +2,39 @@
 
 [OpenAPIv20r10FunctionIndex Function Index]
 
-<h1>Get all locations (v2.0 rev1.0)</h1><p>Provides a list of all locations car2go is operating for like ulm or austin in either XML or JSON format.</p><table class="funcdetail"><tr><td class="funcdetailheader">Access:</td><td>public</td></tr><tr><td class="funcdetailheader">URL:</td><td>http://www.car2go.com/api/v2.0/locations</td></tr><tr><td class="funcdetailheader">Method:</td><td>GET</td></tr></table><h3>Parameters</h3><table class="parameters"><thead><tr><th>Name</th><th>Mandatory</th><th>Description</th></tr></thead><tbody><tr><td>format</td><td>false</td><td> defines response format. Value "json" => JSON format, otherwise xml format is used</td></tr><tr><td>callback</td><td>false</td><td> defines JSONP (JSON with Padding) callback function used as wrapper</td></tr></tbody></table><h3>Request Examples</h3><div class="sample"><pre>GET http://www.car2go.com/api/v2.0/locations</pre></div><div class="sample"><pre>GET http://www.car2go.com/api/v2.0/locations?format=json</pre></div><h3>Response</h3>Each location consists of:
+<h1>Get all locations (v2.0 rev1.0)</h1>
+<p>Provides a list of all locations car2go is operating for like ulm or austin in either XML or JSON format.</p><table class="funcdetail"><tr><td class="funcdetailheader">Access:</td><td>public</td></tr><tr><td class="funcdetailheader">URL:</td><td>http://www.car2go.com/api/v2.0/locations</td></tr><tr><td class="funcdetailheader">Method:</td><td>GET</td></tr></table>
+<h3>Parameters</h3><table class="parameters"><thead><tr><th>Name</th><th>Mandatory</th><th>Description</th></tr></thead><tbody><tr><td>format</td><td>false</td><td> defines response format. Value "json" => JSON format, otherwise xml format is used</td></tr><tr><td>callback</td><td>false</td><td> defines JSONP (JSON with Padding) callback function used as wrapper</td></tr></tbody></table>
+<h3>Request Examples</h3><div class="sample"><pre>GET http://www.car2go.com/api/v2.0/locations</pre></div><div class="sample">
+<pre>GET http://www.car2go.com/api/v2.0/locations?format=json</pre></div>
+<h3>Response</h3>Each location consists of:
                   <ul>
                   <li>returnValue - see OpenApiReturnValue for more details</li>
                   </ul>
                   <ul>
                   <li>locationId - the unique identifier of the location</li>
                   <li>locationName - the name of the location</li>
-                  </ul><h3>Response Examples</h3><div class="sample">A XML response example:
+                  </ul>
+<h3>Response Examples</h3><div class="sample">A XML response example:
  
-                         <pre>
- &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
- &lt;locationResponse xmlns=&quot;http://www.car2go.com/openapi/xmlschema&quot;&gt;
- 	&lt;returnValue&gt;
- 		&lt;code&gt;0&lt;/code&gt;
- 		&lt;description&gt;Operation successful.&lt;/description&gt;
- 	&lt;/returnValue&gt;
- 	&lt;location&gt;
- 		&lt;locationId&gt;1&lt;/locationId&gt;
- 		&lt;locationName&gt;Ulm&lt;/locationName&gt;
- 	&lt;/location&gt;
- 	&lt;location&gt;
- 		&lt;locationId&gt;2&lt;/locationId&gt;
- 		&lt;locationName&gt;Austin&lt;/locationName&gt;
- 	&lt;/location&gt;
- &lt;/locationResponse&gt;
-</pre></div><div class="sample">A JSON response example:
+                         <blockquote>
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+ {{{<locationResponse xmlns="http://www.car2go.com/openapi/xmlschema">}}}
+ 	{{{<returnValue>}}}
+ 		{{{<code>}}}0{{{</code>}}}
+ 		{{{<description>}}}Operation successful.{{{</description>}}}
+ 	{{{</returnValue>}}}
+ 	{{{<location>}}}
+ 		{{{<locationId>}}}1{{{</locationId>}}}
+ 		{{{<locationName>}}}Ulm{{{</locationName>}}}
+ 	{{{</location>}}}
+ 	{{{<location>}}}
+ 		{{{<locationId>}}}2{{{</locationId>}}}
+ 		{{{<locationName>}}}Austin{{{</locationName>}}}
+ 	{{{</location>}}}
+ {{{</locationResponse>}}}
+</blockquote></div><div class="sample">A JSON response example:
  
                          <pre>
   {&quot;location&quot;:[{&quot;locationId&quot;:1,&quot;locationName&quot;:&quot;Ulm&quot;},{&quot;locationId&quot;:2,&quot;locationName&quot;:&quot;Austin&quot;}],&quot;returnValue&quot;:{&quot;code&quot;:0,&quot;description&quot;:&quot;Operation successful.&quot;}}
