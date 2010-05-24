@@ -39,4 +39,6 @@
  
                          <pre>
   {&quot;location&quot;:[{&quot;locationId&quot;:1,&quot;locationName&quot;:&quot;Ulm&quot;},{&quot;locationId&quot;:2,&quot;locationName&quot;:&quot;Austin&quot;}],&quot;returnValue&quot;:{&quot;code&quot;:0,&quot;description&quot;:&quot;Operation successful.&quot;}}
- </pre></div><h3>Return Codes</h3>The following return codes may occur:<table><thead><tr><th>Code</th><th>Description</th><th>Note</th></tr></thead><tr><td>0</td><td>Operation successful.</td><td></td></tr></table><div class="footer">&copy; 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
+ </pre></div><h3>Return Codes</h3>The following return codes may occur:<table><thead><tr><th>Code</th><th>Description</th><th>Note</th></tr></thead><tr><td>0</td><td>Operation successful.</td><td></td></tr></table>
+
+<div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
