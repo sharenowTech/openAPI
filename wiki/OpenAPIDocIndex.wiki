@@ -15,8 +15,8 @@ way you can write applications that manages bookings for a user.</p>
 </ul>
 
 ==Further Reading==
- *[http://en.wikipedia.org/wiki/OAuth OAuth Introduction Wikipedia]
- *[http://oauth.net/core/1.0a/#anchor41 OAuth Examples]
- *[http://www.sitepen.com/blog/2009/02/19/introducing-oauth-in-dojox/ OAuth in DojoX with generally useful examples]
+ * [http://en.wikipedia.org/wiki/OAuth OAuth Introduction Wikipedia]
+ * [http://oauth.net/core/1.0a/#anchor41 OAuth Examples]
+ * [http://www.sitepen.com/blog/2009/02/19/introducing-oauth-in-dojox/ OAuth in DojoX with generally useful examples]
 
 <div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
