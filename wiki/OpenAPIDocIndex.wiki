@@ -23,6 +23,6 @@ way you can write applications that manages bookings for a user.</p>
 Of course, we're always learning and improving. You will see this in updates on our OpenAPI implementation and the documentation for it. To keep both clearly versioned, we use the following simple convention:
 
  * API _interface_ is versioned with a *_v_* for *_version_*. These versions are different API implementations. You can clearly see this in the API endpoint URLs, like http://www.car2go.com/api/V1.0/ compared to http://www.car2go.com/api/v2.0/. For each API version we provide a separate set of documentation in parallel to the other documentation sets.
- * API _documentation_ is revisioned with a *_r_* for *_revision_*. For an API version, there can be new documentation revisions if we enhanced the documentation without chaning the API itself. They will usually just be updated and not be offered in parallel.
+ * API _documentation_ is revisioned with a *_r_* or *_rev_* for *_revision_*. For an API version, there can be new documentation revisions if we enhanced the documentation without chaning the API itself. They will usually just be updated and not be offered in parallel.
 
 <div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
