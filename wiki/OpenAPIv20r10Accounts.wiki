@@ -41,10 +41,10 @@
  			{{{<description>}}}No valid accounts found.{{{</description>}}}
  		{{{</returnValue>}}}
  	{{{</accountResponse>}}}
-</blockquote></div><div class="sample">A JSON response example:
- 
-                         <pre>
- {&quot;returnValue&quot;:{&quot;code&quot;:0,&quot;description&quot;:&quot;Operation successful.&quot;},&quot;account&quot;:[{&quot;accountId&quot;:994,&quot;description&quot;:&quot;Max Mustermann11585&quot;}]}
-</pre></div><h3>Return Codes</h3>The following return codes may occur:<table><thead><tr><th>Code</th><th>Description</th><th>Note</th></tr></thead><tr><td>0</td><td>Operation successful.</td><td></td></tr><tr><td>1</td><td>Location invalid.</td><td></td></tr><tr><td>2</td><td>UserId invalid.</td><td></td></tr><tr><td>3</td><td>No valid accounts found.</td><td> The user has no valid accounts. This occurs when the user has no account and is not invited to any accounts.</td></tr></table>
+</blockquote></div>
+<div class="sample">A JSON response example:
+ <pre>
+ {"returnValue":{"code":0,"description":"Operation successful."},"account":[{"accountId":994,"description":"Max Mustermann11585"}]}</pre></div>
+<h3>Return Codes</h3>The following return codes may occur:<table><thead><tr><th>Code</th><th>Description</th><th>Note</th></tr></thead><tr><td>0</td><td>Operation successful.</td><td></td></tr><tr><td>1</td><td>Location invalid.</td><td></td></tr><tr><td>2</td><td>UserId invalid.</td><td></td></tr><tr><td>3</td><td>No valid accounts found.</td><td> The user has no valid accounts. This occurs when the user has no account and is not invited to any accounts.</td></tr></table>
 
 <div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
