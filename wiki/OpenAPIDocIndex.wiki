@@ -5,7 +5,7 @@
 such as vehicles available, parking spots and gas stations. <br/>Furthermore
 we offer access to protected functions for registered developers. This
 way you can write applications that manages bookings for a user.</p>
-<h2>Table of contents</h2>
+==Table of contents==
 <ul class="toc">
 <li>[OpenAPIv20r10FunctionIndex v2.0 Functions and Endpoint Overview]</li>
 <li>[OpenAPIv20r10ReturnValues v2.0 Return Values Overview]</li>
@@ -13,5 +13,10 @@ way you can write applications that manages bookings for a user.</p>
 <li>[OpenAPIv10FunctionIndex v1.0 (deprecated)]</li>
 <li>[http://www.car2go.com/api/tou.htm Terms of usage (www.car2go.com)]</li>
 </ul>
+
+==Further Reading==
+ *[http://en.wikipedia.org/wiki/OAuth OAuth Introduction Wikipedia]
+ *[http://oauth.net/core/1.0a/#anchor41 OAuth Examples]
+ *[http://www.sitepen.com/blog/2009/02/19/introducing-oauth-in-dojox/ OAuth in DojoX with generally useful examples]
 
 <div class="footer">© 2010 car2go GmbH. All rights reserved. Generated 18.05.10 02:04</div>
