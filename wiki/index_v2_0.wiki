@@ -1,4 +1,5 @@
 #summary car2go API Documentation - Index API 2.0
+#labels Featured
 #sidebar menu
 = car2go API v2.0 =
 == Endpoints ==
