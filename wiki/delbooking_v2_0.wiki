@@ -1,0 +1,80 @@
+#summary car2go API Documentation - Cancel booking
+#sidebar menu
+= Cancel booking =
+This function provides cancellation of an existing booking. Currently only HTTP DELETE is allowed. Access to this function is restricted. See <a href="../oauth.html">OAuth documentation</a> for more details.
+
+|| *Access:* ||protected ||
+|| *URL:* ||https://www.car2go.com/api/v2.0/booking/bookingId ||
+|| *Method:* ||DELETE ||
+
+
+
+=== Parameters ===
+|| *Name* || *Mandatory* || *Description* ||
+|| bookingId || true || the identifier of the reservation to be canceled. ||
+
+
+
+
+=== Request Examples ===
+{{{
+DELETE https://www.car2go.com/api/v2.0/booking/1234
+}}}
+
+{{{
+DELETE https://www.car2go.com/api/v2.0/booking/8152
+}}}
+
+
+
+
+
+=== Response ===
+The cancellation information of a booking consists of:
+                  <ul>
+                  <li>returnValue - see list of return codes below and  <a href="index.html#returnvalues">return values</a> for more details</li>
+                  <li>cancelFeeExists - flag indicating if any cancel fee exists</li>
+                  <li>cancelFee - the amount of the cancellation fee. Period is used as decimal separator.</li>
+                  <li>cancelFeeCurrency - the currency of the cancellation fee</li>
+                  </ul>
+
+
+
+=== Response Examples ===
+A XML response example of cancel booking request:
+ 
+                         {{{
+
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <cancelBookingResponse xmlns="http://www.car2go.com/openapi/xmlschema">                          
+     <returnValue>
+         <code>0</code> 
+         <description>Operation successful.</description> 
+     </returnValue>
+     <cancelBooking>
+         <cancelFeeExists>true</cancelFeeExists> 
+         <cancelFee>4.00</cancelFee> 
+         <cancelFeeCurrency>EUR</cancelFeeCurrency> 
+     </cancelBooking>
+ </cancelBookingResponse>
+ 
+}}}
+
+
+
+
+
+=== Return Codes ===
+The following return codes may occur:
+|| *Code* || *Description* || *Note* ||
+|| 0 || Operation successful. ||  ||
+|| 2 || !UserId invalid. ||  ||
+|| 6 || Invalid url parameter provided. ||  ||
+|| 11 || Booking id invalid. ||  ||
+
+
+
+
+
+
+(c) 2010 car2go GmbH. All rights reserved. Generated 16.11.10 12:55
