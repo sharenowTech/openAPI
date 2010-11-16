@@ -18,7 +18,7 @@ As a developer you must register as a so called "consumer" at car2go. See [oauth
 == OAuth Endpoints ==
 || *Name* || *Url* || *Note* ||
 || Get request token || https://www.car2go.com/api/reqtoken || Token is valid for some hours. ||
-|| Authorize token || https://www.car2go.com/api/authorize || Pass request token as parameter, e.g. "?oauth_token=[token]" ||
+|| Authorize token || https://www.car2go.com/api/authorize || Pass request token as parameter, e.g. "?oauth_token={{{[token]}}}" ||
 || Get access token || https://www.car2go.com/api/accesstoken || Token is valid for about one month. User can revoke token via car2go portal. ||
 
 == Error codes ==
