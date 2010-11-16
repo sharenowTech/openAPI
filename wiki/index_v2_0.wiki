@@ -19,7 +19,7 @@ See [oauth OAuth Documentation] if you want to learn how to access protected API
 
 
 == Return values == 
-Response format is defined in [http://car2go.googlecode.com/files/openapi.xsd openapi.xsd]
+Response format is defined in [http://www.car2go.com/api/v2.0/openapi.xsd openapi.xsd]
 
 
 
