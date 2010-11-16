@@ -1,0 +1,21 @@
+#summary car2go API Documentation - Index API 1.0
+#sidebar menu
+= car2go API v1.0 =
+
+|| *Name* || *Method* || *Url* || ||
+|| Get free vehicles || GET || http://www.car2go.com/api/V1.0/ulm/vacant or http://www.car2go.com/api/V1.0/austin/vacant || *deprecated* ||
+|| Get parking spots || GET || http://www.car2go.com/api/V1.0/ulm/parking or http://www.car2go.com/api/V1.0/austin/parking || *deprecated* ||
+|| Get gas station || GET || http://www.car2go.com/api/V1.0/ulm/gas or http://www.car2go.com/api/V1.0/austin/gas || *deprecated* ||
+|| Get reserverd vehicle || GET || http://www.car2go.com/api/V1.0/ulm/reserved/[code] or http://www.car2go.com/api/V1.0/austin/reserved/[code] || *deprecated* ||
+
+
+Response is provided in KML format. More information can be found here:
+[http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html KML Reference at code.google.com]
+
+
+Further API details can be found here (German): [http://blog.car2go.com/2009/11/15/car2go-open-api-10/ car2go OpenAPI 1.0 at blog.car2go.com]
+
+
+
+
+(c) 2010 car2go GmbH. All rights reserved. Generated 16.11.10 12:55
