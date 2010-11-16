@@ -98,7 +98,7 @@ The following return codes may occur:
 || *Code* || *Description* || *Note* ||
 || 0 || Operation successful. ||  ||
 || 1 || Location invalid. ||  ||
-|| 2 || UserId invalid. ||  ||
+|| 2 || !UserId invalid. ||  ||
 || 3 || No valid accounts found. ||  The user has no valid accounts. This occurs when the user has no account and is not invited to any accounts. ||
 
 
