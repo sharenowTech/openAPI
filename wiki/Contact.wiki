@@ -5,6 +5,6 @@
 
 If you should have any questions regarding the car2go Open API, try the following steps:
 
-  * Read through our [OpenAPIDocIndex wiki pages]. You can as well [http://code.google.com/p/car2go/downloads/list download] the documentation for comfortable offline reading.
+  * Read through our [overview wiki pages]. You can as well [http://code.google.com/p/car2go/downloads/list download] the documentation for comfortable offline reading.
   * See the [http://groups.google.com/group/car2go-openapi group discussion] for assistance. There might have been others with the same problem and an idea how to solve it.
   * If that doesn't help, contact us at openapi`[at]`car2go.com
