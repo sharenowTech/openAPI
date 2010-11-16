@@ -1,0 +1,73 @@
+#summary car2go API Documentation - OAuth
+#sidebar menu
+= Access protected functions via OAuth =
+Some API functions are marked as protected. You need to authenticate via OAuth to access these functions.
+
+
+See [http://www.oauth.net oauth.net] for more details on OAuth.
+
+
+As a developer you must register as a so called "consumer" at car2go. See [oauth#Registration_as_consumer registration] for more details.
+
+== Restrictions ==
+  * Use HMAC-SHA1 for signing requests.
+  * We ignore callback URLs passed to request token endpoint. You may provide a callback URL during registration as a consumer.
+  * Access to car2go API is limited to a few calls per second (see [oauth#Error_codes Error Codes]). Keep this in mind during development of your application.
+
+
+== OAuth Endpoints ==
+|| *Name* || *Url* || *Note* ||
+|| Get request token || https://www.car2go.com/api/reqtoken || Token is valid for some hours. ||
+|| Authorize token || https://www.car2go.com/api/authorize || Pass request token as parameter, e.g. "?oauth_token=[token]" ||
+|| Get access token || https://www.car2go.com/api/accesstoken || Token is valid for about one month. User can revoke token via car2go portal. ||
+
+== Error codes ==
+Error codes are based on [http://wiki.oauth.net/ProblemReporting Problem Reporting (oauth.net)].
+
+
+|| *HTTP Code* || *OAuth problem* || *Notes* ||
+|| 400 || version_rejected || ||
+|| 400 || parameter_absent || ||
+|| 400 || parameter_rejected || ||
+|| 400 || timestamp_refused || ||
+|| 400 || signature_method_rejected || ||
+|| 401 || nonce_used || ||
+|| 401 || signature_invalid || ||
+|| 401 || consumer_key_unknown || ||
+|| 503 || consumer_key_refused || ||
+|| 401 || token_expired || ||
+|| 401 || token_rejected || ||
+|| 401 || permission_unknown || ||
+|| 503 || user_refused || ||
+|| 401 || verifier_invalid || ||
+
+
+== Registration as consumer ==
+To register as consumer at car2go send an email to [mailto:openapi@car2go.com openapi@car2go.com].  We ask you to provide some background information on you and the cool app you are about to create.
+
+
+=== Mandatory Information ===
+
+  * Full name
+  * Email
+  * Country you reside in
+  * Type of project: Do you develop in private/for education or studies/for a company/...
+  * Project or product name
+  * Project description (what's the intend and goal, which functionality is focussed)
+  * Target Platform/Technology (Web Application/Mobile App/iOS/Android/Nokia Sxyz/Blackberry/Palm/RichClient/...)
+
+
+=== Optional Information ===
+
+  * Envisioned development timeline (when do you want to release the app?)
+  * CallbackURL for Applicationredirect (optional)
+  * For potential future linkin in car2go portal: URL, Email, Icon
+  * Info whether test user is required
+  * Address
+  
+As soon as we receive the details, we will complete the registration process and you're ready to go!
+
+
+
+
+(c) 2010 car2go GmbH. All rights reserved. Generated 16.11.10 12:55
