@@ -12,6 +12,7 @@ This function provides cancellation of an existing booking. Currently only HTTP 
 === Parameters ===
 || *Name* || *Mandatory* || *Description* ||
 || bookingId || true || the identifier of the reservation to be canceled. ||
+|| format || false || defines response format. Value "json" => JSON format, otherwise xml format is used. ||
 
 
 
