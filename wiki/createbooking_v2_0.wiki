@@ -1,6 +1,8 @@
 #summary car2go API Documentation - Create booking
 #sidebar menu
 = Create booking =
+<b>car2go API v2.0 is deprecated. See <a href="index_v2_1">v2.1</a> for the current car2go API version.</b>
+
 Create a new short-term booking for a user. Access to this function is restricted. See <a href="../oauth.html">OAuth documentation</a> for more details.
 
 || *Access:* ||protected ||
@@ -60,4 +62,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 16.11.10 12:55
+(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 17:23
