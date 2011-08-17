@@ -70,4 +70,4 @@ As soon as we receive the details, we will complete the registration process and
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 16.11.10 12:55
+(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
