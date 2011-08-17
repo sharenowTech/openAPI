@@ -1,7 +1,7 @@
 #summary car2go API Documentation - Get booking
 #sidebar menu
 = Get booking =
-<b>car2go API v2.0 is deprecated. See <a href="index_v2_1">v2.1</a> for the current car2go API version.</b>
+<b>car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API version.</b>
 
 Provides the detailed information of a recently booked vehicle for the current user. The vehicle must have been assigned to the authenticated user. Access to this function is restricted. See <a href="../oauth.html">OAuth documentation</a> for more details.
 
