@@ -1,17 +1,18 @@
 #summary car2go API Documentation - Index API 2.0
 #sidebar menu
 = car2go API v2.0 =
+car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API.
 == Endpoints ==
-|| *Name* || *Method* || *Url* || *Access* ||
-|| [parkingspots_v2_0 Get all parking spots] ||GET || http://www.car2go.com/api/v2.0/parkingspots || public ||
-|| [locations_v2_0 Get all locations] ||GET || http://www.car2go.com/api/v2.0/locations || public ||
-|| [gasstations_v2_0 Get all gas stations] ||GET || http://www.car2go.com/api/v2.0/gasstations || public ||
-|| [vehicles_v2_0 Get all free vehicles] ||GET || http://www.car2go.com/api/v2.0/vehicles || public ||
-|| [accounts_v2_0 Get all accounts] ||GET || https://www.car2go.com/api/v2.0/accounts || protected ||
-|| [getbookings_v2_0 Get bookings] ||GET || https://www.car2go.com/api/v2.0/bookings || protected ||
-|| [createbooking_v2_0 Create booking] ||POST || https://www.car2go.com/api/v2.0/bookings || protected ||
-|| [getbooking_v2_0 Get booking] ||GET || https://www.car2go.com/api/v2.0/booking || protected ||
-|| [delbooking_v2_0 Cancel booking] ||DELETE || https://www.car2go.com/api/v2.0/booking/bookingId || protected ||
+|| *Name* || *Method* || *Url* || *Access* || ||
+|| [parkingspots_v2_0 Get all parking spots] ||GET || http://www.car2go.com/api/v2.0/parkingspots || public || *deprecated* ||
+|| [locations_v2_0 Get all locations] ||GET || http://www.car2go.com/api/v2.0/locations || public || *deprecated* ||
+|| [gasstations_v2_0 Get all gas stations] ||GET || http://www.car2go.com/api/v2.0/gasstations || public || *deprecated* ||
+|| [vehicles_v2_0 Get all free vehicles] ||GET || http://www.car2go.com/api/v2.0/vehicles || public || *deprecated* ||
+|| [accounts_v2_0 Get all accounts] ||GET || https://www.car2go.com/api/v2.0/accounts || protected || *deprecated* ||
+|| [getbookings_v2_0 Get bookings] ||GET || https://www.car2go.com/api/v2.0/bookings || protected || *deprecated* ||
+|| [createbooking_v2_0 Create booking] ||POST || https://www.car2go.com/api/v2.0/bookings || protected || *deprecated* ||
+|| [getbooking_v2_0 Get booking] ||GET || https://www.car2go.com/api/v2.0/booking || protected || *deprecated* ||
+|| [delbooking_v2_0 Cancel booking] ||DELETE || https://www.car2go.com/api/v2.0/booking/bookingId || protected || *deprecated* ||
 
 
 See [oauth OAuth Documentation] if you want to learn how to access protected API functions.
@@ -19,7 +20,7 @@ See [oauth OAuth Documentation] if you want to learn how to access protected API
 
 
 == Return values == 
-Response format is defined in [http://www.car2go.com/api/v2.0/openapi.xsd openapi.xsd]
+Response format is defined in [openapi.xsd openapi.xsd]
 
 
 
@@ -49,4 +50,4 @@ Some API functions result in KML response. More information can be found here: [
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 16.11.10 12:55
+(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
