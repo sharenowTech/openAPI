@@ -1,7 +1,7 @@
 #summary car2go API Documentation - Get all locations
 #sidebar menu
 = Get all locations =
-<b>car2go API v2.0 is deprecated. See <a href="index_v2_1">v2.1</a> for the current car2go API version.</b>
+<b>car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API version.</b>
 
 Provides a list of all locations car2go is operating for like ulm or austin in either XML or JSON format.
 
