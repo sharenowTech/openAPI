@@ -1,7 +1,7 @@
 #summary car2go API Documentation - Get all free vehicles
 #sidebar menu
 = Get all free vehicles =
-<b>car2go API v2.0 is deprecated. See <a href="index_v2_1">v2.1</a> for the current car2go API version.</b>
+<b>car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API version.</b>
 
 Provides a list of all free car2go vehicles for a given location like ulm or austin in KML format. 
 KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. More information about KML can be found here: <a href="http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html" target="_blank">KML Reference at code.google.com</a> 
