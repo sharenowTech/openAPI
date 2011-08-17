@@ -8,12 +8,12 @@ Furthermore we offer access to protected functions for registered developers. Th
 
 
 == Table of contents ==
-  * [index_v1_0 car2go API v1.0 (deprecated)]
-  * [index_v2_0 car2go API v2.0]
+  * [index_v2_0 car2go API v2.0 (deprecated)]
+  * [index_v2_1 car2go API v2.1]
   * [oauth Access protected functions via OAuth]
   * [http://www.car2go.com/api/tou.htm Terms of usage (www.car2go.com)]	
 
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 16.11.10 12:55
+(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
