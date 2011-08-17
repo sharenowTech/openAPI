@@ -1,6 +1,8 @@
 #summary car2go API Documentation - Get all gas stations
 #sidebar menu
 = Get all gas stations =
+<b>car2go API v2.0 is deprecated. See <a href="index_v2_1">v2.1</a> for the current car2go API version.</b>
+
 Provides a list of car2go gas stations in context of specific location like ulm or austin in KML format. 
 KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. More information about KML can be found here: <a href="http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html" target="_blank">KML Reference at code.google.com</a> 
 
@@ -23,11 +25,15 @@ The gas stations can be used to refuel a car2go. The customer can use the car2go
 
 === Request Examples ===
 {{{
-GET http://www.car2go.com/api/v2.0/gasstations?loc=ulm
+
+ GET http://www.car2go.com/api/v2.0/gasstations?loc=ulm
+ 
 }}}
 
 {{{
-GET http://www.car2go.com/api/v2.0/gasstations?loc=austin
+
+ GET http://www.car2go.com/api/v2.0/gasstations?loc=austin
+ 
 }}}
 
 
@@ -94,4 +100,4 @@ A JSON response example:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 16.11.10 12:55
+(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 17:23
