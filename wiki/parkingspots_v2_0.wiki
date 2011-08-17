@@ -1,6 +1,8 @@
 #summary car2go API Documentation - Get all parking spots
 #sidebar menu
 = Get all parking spots =
+<b>car2go API v2.0 is deprecated. See <a href="index_v2_1">v2.1</a> for the current car2go API version.</b>
+
 Provides a list of car2go parking spots for a specific location like ulm or austin in KML format. 
 KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. More information about KML can be found here: <a href="http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html" target="_blank">KML Reference at code.google.com</a> 
 
@@ -23,11 +25,15 @@ The parking spots are especially dedicated for car2go vehicles.
 
 === Request Examples ===
 {{{
-GET http://www.car2go.com/api/v2.0/parkingspots?loc=Ulm
+
+ GET http://www.car2go.com/api/v2.0/parkingspots?loc=Ulm
+ 
 }}}
 
 {{{
-GET http://www.car2go.com/api/v2.0/parkingspots?loc=Austin&format=json
+
+ GET http://www.car2go.com/api/v2.0/parkingspots?loc=Austin&format=json
+ 
 }}}
 
 
@@ -47,7 +53,8 @@ The KML file defines a placemark tag for each car2go parking spot. The placemark
 
 === Response Examples ===
 A KML response example:
- {{{
+ 
+                         {{{
 
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  <kml xmlns:ns3="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:ns2="http://www.w3.org/2005/Atom"
@@ -87,7 +94,7 @@ A KML response example:
  		</Placemark>
  	</Document>
  </kml>
-
+ 
 }}}
 
 A JSON response example:
@@ -108,4 +115,4 @@ A JSON response example:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 16.11.10 12:55
+(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 17:23
