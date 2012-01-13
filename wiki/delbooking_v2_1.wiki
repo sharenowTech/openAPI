@@ -63,6 +63,23 @@ A XML response example of cancel booking request:
 }}}
 
 
+ 
+ A JSON example:
+ {{{
+
+ {"cancelBooking":[{
+   "cancelFee":"4.00",
+   "cancelFeeCurrency":"EUR",
+   "cancelFeeExists":true
+ }],
+ "returnValue":{
+   "code":0,
+   "description":"Operation successful."
+ }}
+ 
+}}}
+
+
 
 
 
@@ -79,4 +96,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
+(c) 2010 car2go GmbH. All rights reserved. Generated 02.01.12 12:51
