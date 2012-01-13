@@ -97,6 +97,36 @@ A XML response example of reserved vehicle:
 }}}
 
 
+ 
+ A JSON example:
+ {{{
+
+ {"booking":[{
+    "account":{"accountId":1002,"description":"Max Mustermann1002"},
+    "bookingId":2910,
+    "bookingposition":{"address":"Daimler Mitarbeiterparkplatz, Wilhelm-Runge-Strasse","latitude":48.423291,"longitude":9.939559},
+    "reservationTime":{"firstDayOfWeek":1,"gregorianChange":"1582-10-15","lenient":true,"minimalDaysInFirstWeek":1,"time":"2010-01-02","timeInMillis":1325501991033,"timeZone":{"DSTSavings":3600000,"ID":"Europe/Berlin","dirty":false,"displayName":"Central European Time","lastRuleInstance":{"DSTSavings":3600000,"ID":"Europe/Berlin","displayName":"Central European Time","rawOffset":3600000},"rawOffset":3600000}},
+    "vehicle":{
+      "engineType":"CE",
+      "exterior":"GOOD",
+      "fuel":90,
+      "interior":"GOOD",
+      "numberPlate":"UL-C1010",
+      "position":{
+        "address":"Wilhelm-Runge-Strasse 10, 89081 Ulm",
+        "latitude":48.42188,
+        "longitude":9.9411
+      },
+      "vin":"WME0000000K000010"}
+  }],
+  "returnValue":{
+    "code":0,
+    "description":"Operation successful."
+  }}
+ 
+}}}
+
+
 
 
 
@@ -115,4 +145,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
+(c) 2010 car2go GmbH. All rights reserved. Generated 02.01.12 12:51
