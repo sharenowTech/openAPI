@@ -52,7 +52,7 @@ To register as consumer at car2go send an email to [mailto:openapi@car2go.com op
   * Email
   * Country you reside in
   * Type of project: Do you develop in private/for education or studies/for a company/...
-  * Project or product name
+  * Project or product name (*Note:* This information is required!)
   * Project description (what's the intend and goal, which functionality is focussed)
   * Target Platform/Technology (Web Application/Mobile App/iOS/Android/Nokia Sxyz/Blackberry/Palm/RichClient/...)
 
