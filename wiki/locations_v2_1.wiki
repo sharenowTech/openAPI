@@ -14,6 +14,7 @@ Provides a list of all locations car2go is operating for like ulm or austin in e
 || oauth_consumer_key || true || your assigned oauth consumer key ||
 || format || false || defines response format. Value "json" => JSON format, otherwise xml format is used ||
 || callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
+|| test || false || has currently no effect ||
 
 
 
@@ -91,17 +92,9 @@ A JSON response example:
 }}}
 
 
-
-
-
 === Return Codes ===
 The following return codes may occur:
 || *Code* || *Description* || *Note* ||
 || 0 || Operation successful. ||  ||
 
-
-
-
-
-
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
+(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
