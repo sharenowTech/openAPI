@@ -16,6 +16,7 @@ Create a new short-term booking for a user. Access to this function is restricte
 || callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
 || vin || true || VIN of the vehicle to be booked ||
 || account || true || id of the user account which will be charged ||
+|| test || false || activates test mode if set to "1". See below for more details. ||
 
 
 
@@ -35,9 +36,9 @@ Create a new short-term booking for a user. Access to this function is restricte
 Similar to response provided by <a href="getbookings.html">Get Bookings</a> though content is limited to booking created
 
 
-
-=== Response Examples ===
-
+=== Test Mode ===
+A successful test booking requires a valid test account and a valid vin.
+*Note*: No real booking is created. Therefore you won't be charged for test bookings. Furthermore the booking won't be returned by <a href="getbookings.html">Get Bookings</a>.
 
 
 
@@ -60,4 +61,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
+(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
