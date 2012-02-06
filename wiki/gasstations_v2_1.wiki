@@ -19,6 +19,7 @@ The gas stations can be used to refuel a car2go. The customer can use the car2go
 || oauth_consumer_key || true || your assigned oauth consumer key ||
 || format || false || defines response format. Value "json" => JSON format, otherwise xml format is used ||
 || callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
+|| test || false || has currently no effect ||
 
 
 
@@ -90,14 +91,4 @@ A JSON response example:
  
 }}}
 
-
-
-
-
-
-
-
-
-
-
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
+(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
