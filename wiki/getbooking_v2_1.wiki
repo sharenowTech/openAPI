@@ -14,6 +14,7 @@ Provides the detailed information of a recently booked vehicle for the current u
 || loc || true || location identifier string of the user's home location, e.g. "ulm", "austin". ||
 || format || false || defines response format. Value "json" => JSON format, otherwise xml format is used ||
 || callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
+|| test || false || activates test mode if set to "1". See below for more details. ||
 
 
 
@@ -130,6 +131,11 @@ A XML response example of reserved vehicle:
 
 
 
+=== Test Mode ===
+Response contains one booking for one of the test accounts.
+
+
+
 === Return Codes ===
 The following return codes may occur:
 || *Code* || *Description* || *Note* ||
@@ -145,4 +151,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 02.01.12 12:51
+(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
