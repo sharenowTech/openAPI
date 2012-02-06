@@ -14,6 +14,7 @@ Provides a list of all current bookings of a user. Access to this function is re
 || loc || true || location identifier string of the user's home location, e.g. "ulm", "austin". ||
 || format || false || defines response format. Value "json" => JSON format, otherwise xml format is used ||
 || callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
+|| test || false || activates test mode if set to "1". See below for more details. ||
 
 
 
@@ -149,6 +150,11 @@ A XML response example:
 
 
 
+=== Test Mode ===
+Response contains two bookings, one for each test account. The first one has a vehicle assigned, the second one is scheduled in future. Note: Bookings created in test mode won't be returned.
+
+
+
 === Return Codes ===
 The following return codes may occur:
 || *Code* || *Description* || *Note* ||
@@ -163,4 +169,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 02.01.12 12:51
+(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
