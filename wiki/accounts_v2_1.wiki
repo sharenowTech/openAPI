@@ -92,7 +92,7 @@ A JSON response example:
 
 
 
-=== TestMode ===
+=== Test Mode ===
 Response contains two test accounts which can be used to create bookings in test mode.
 
 
