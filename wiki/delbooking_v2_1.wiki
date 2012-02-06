@@ -14,6 +14,7 @@ This function provides cancellation of an existing booking. Currently only HTTP 
 || bookingId || true || the identifier of the reservation to be canceled. ||
 || format || false || defines response format. Value "json" => JSON format, otherwise xml format is used ||
 || callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
+|| test || false || activates test mode if set to "1". See below for more details. ||
 
 
 
@@ -83,6 +84,13 @@ A XML response example of cancel booking request:
 
 
 
+=== TestMode ===
+Deletion of a booking in test mode requires one of test booking ids to be passed. <br/>
+Note: You won't be charged any cancellation fees even if the result says "cancelFeeExists=true" <br/>
+Furthermore the deletion has no impact on the result of <a href="getbookings.html">Get Bookings</a> called in test mode.
+
+
+
 === Return Codes ===
 The following return codes may occur:
 || *Code* || *Description* || *Note* ||
@@ -96,4 +104,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 02.01.12 12:51
+(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
