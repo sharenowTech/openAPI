@@ -14,6 +14,7 @@ Provides all valid accounts of a user for a given location like Ulm or Austin. A
 || loc || true || location identifier string of the user's home location, e.g. "ulm", "austin". ||
 || format || false || defines response format. Value "json" => JSON format, otherwise xml format is used ||
 || callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
+|| test || false || activates test mode if set to "1". See below for more details. ||
 
 
 
@@ -91,6 +92,9 @@ A JSON response example:
 
 
 
+=== TestMode ===
+Response contains two test accounts which can be used to create bookings in test mode.
+
 
 
 === Return Codes ===
@@ -101,9 +105,4 @@ The following return codes may occur:
 || 2 || !UserId invalid. ||  ||
 || 3 || No valid accounts found. ||  The user has no valid accounts. This occurs when the user has no account and is not invited to any accounts. ||
 
-
-
-
-
-
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
+(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
