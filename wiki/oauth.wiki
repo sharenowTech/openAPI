@@ -62,7 +62,6 @@ To register as consumer at car2go send an email to [mailto:openapi@car2go.com op
   * Envisioned development timeline (when do you want to release the app?)
   * CallbackURL for Applicationredirect (optional)
   * For potential future linkin in car2go portal: URL, Email, Icon
-  * Info whether test user is required
   * Address
   
 As soon as we receive the details, we will complete the registration process and you're ready to go!
