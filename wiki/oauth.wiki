@@ -14,6 +14,10 @@ As a developer you must register as a so called "consumer" at car2go. See [oauth
   * We ignore callback URLs passed to request token endpoint. You may provide a callback URL during registration as a consumer.
   * Access to car2go API is limited to a few calls per second (see [oauth#Error_codes Error Codes]). Keep this in mind during development of your application.
 
+== Hints ==
+ * The nonce must not exceed a maximum of 40 characters
+ * Your application should be able to handle oauth tokens up to 80 characters
+ * Even though we ignore callback URL passed to the request token endpoint this parameter is mandatory and has to be set to "oob"
 
 == OAuth Endpoints ==
 || *Name* || *Url* || *Note* ||
