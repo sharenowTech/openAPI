@@ -52,8 +52,7 @@ The response is provided as KML file which defines a placemark tag for each free
                   <ul>
                   <li>The interior and exterior state can contain one of the following values:<br/>
                   GOOD<br/>
-                  BAD
-                  </li>
+                  UNACCEPTABLE</li>
                   </ul>
                   <ul>
                   <li>The engine of the vehicle can be a combustion engine or an electric drive:<br/>
