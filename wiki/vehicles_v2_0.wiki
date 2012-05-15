@@ -51,7 +51,7 @@ The response is provided as KML file which defines a placemark tag for each free
                   <ul>
                   The interior and exterior state can contain one of the following values:
                   <li>GOOD</li>
-                  <li>BAD</li>
+                  <li>UNACCEPTABLE</li>
                   </ul>
                   <ul>
                   The fuel value is the percentage of fuel left in the fuel tank. 100 means the fuel tank is full. A 0 value means the
