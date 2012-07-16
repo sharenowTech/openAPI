@@ -40,7 +40,7 @@ The response is provided as KML file which defines a placemark tag for each zone
                   <ul>
                   <li>included - zones included in the operating area</li>
                   <li>excluded - zones excluded from the operating area (no parking allowed)</li>
-                    <li>parking - zone is a dedicated car2go parking spot</li>
+                  <li>parking - zone is a dedicated car2go parking spot</li>
                   </ul>
 
 
