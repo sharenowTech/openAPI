@@ -13,6 +13,7 @@
   * [index_v2_1 Function Index v2.1]
     * [parkingspots_v2_1 Get all parking spots]
     * [locations_v2_1 Get all locations]
+    * [operationareas_v2_1 all home areas]
     * [gasstations_v2_1 Get all gas stations] 
     * [vehicles_v2_1 Get all free vehicles]
     * [accounts_v2_1 Get all accounts]
