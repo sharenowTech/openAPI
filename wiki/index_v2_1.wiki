@@ -4,6 +4,7 @@
 == Endpoints ==
 || *Name* || *Method* || *Url* || *Access* ||
 || [parkingspots_v2_1 Get all parking spots] ||GET || http://www.car2go.com/api/v2.1/parkingspots || public ||
+|| [operationareas_v2_1 Get the operating area] ||GET || http://www.car2go.com/api/v2.1/operationareas || public ||
 || [locations_v2_1 Get all locations] ||GET || http://www.car2go.com/api/v2.1/locations || public ||
 || [gasstations_v2_1 Get all gas stations] ||GET || http://www.car2go.com/api/v2.1/gasstations || public ||
 || [vehicles_v2_1 Get all free vehicles] ||GET || http://www.car2go.com/api/v2.1/vehicles || public ||
@@ -49,4 +50,4 @@ Some API functions result in KML response. More information can be found here: [
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28
+(c) 2010 car2go GmbH. All rights reserved. Generated 16.07.12 10:48
