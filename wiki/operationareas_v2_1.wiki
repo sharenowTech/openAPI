@@ -13,6 +13,7 @@ KML is a file format used to display geographic data in an Earth browser such as
 
 === Parameters ===
 || *Name* || *Mandatory* || *Description* ||
+|| loc || true || location identifier string of the user's home location, e.g. "ulm", "austin". ||
 || oauth_consumer_key || true || your assigned oauth consumer key ||
 || format || false || defines response format. Value "json" => JSON format, otherwise xml format is used ||
 || callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
