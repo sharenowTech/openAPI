@@ -24,11 +24,11 @@ KML is a file format used to display geographic data in an Earth browser such as
 
 === Request Examples ===
 {{{
-GET http://www.car2go.com/api/v2.1/operationareas?oauth_consumer_key=consumerkey
+GET http://www.car2go.com/api/v2.1/operationareas?oauth_consumer_key=consumerkey&loc=ulm
 }}}
 
 {{{
-GET http://www.car2go.com/api/v2.1/operationareas?oauth_consumer_key=consumerkey&format=json
+GET http://www.car2go.com/api/v2.1/operationareas?oauth_consumer_key=consumerkey&loc=ulm&format=json
 }}}
 
 
