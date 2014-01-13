@@ -97,14 +97,6 @@ A JSON response example:
 }}}
 
 
-
-
-
-=== TestMode ===
-
-
-
-
 === Return Codes ===
 The following return codes may occur:
 || *Code* || *Description* || *Note* ||
