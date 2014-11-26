@@ -125,6 +125,8 @@ A XML response example where user has one recent rental:
           </minutesDiscounts>
       </rentals>
  </rentalsResponse>
+ }}}
+
  </pre>A JSON response example:
  <p/>
  {{{
