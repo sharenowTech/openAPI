@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Get all free vehicles
-#sidebar menu
 = Get all free vehicles =
 <b>car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API version.</b>
 
@@ -40,29 +40,29 @@ KML is a file format used to display geographic data in an Earth browser such as
 
 === Response ===
 The response is provided as KML file which defines a placemark tag for each free car2go vehicle. The placemark tag
-                  defines following sub tags:
-                  <ul>
-                  <li>name - contains the license plate of the vehicle</li>
-                  <li>description - contains the address, the interior, the exterior state and the fuel level of the vehicle. The address,
-                  the interior state, the exterior state and the fuel are also defined in the extendeddata tag.</li>
-                  <li>point - the coordinates of the vehicle</li>
-                  <li>extendeddata - the extended data contains the vehicle identification number(vin), the address, the interior state,
-                  the exterior state and the fuel level of the vehicle.
-                  <ul>
-                  The interior and exterior state can contain one of the following values:
-                  <li>GOOD</li>
-                  <li>UNACCEPTABLE</li>
-                  </ul>
-                  <ul>
-                  The fuel value is the percentage of fuel left in the fuel tank. 100 means the fuel tank is full. A 0 value means the
-                  fuel tank is empty.
-                  </ul>
-                  <ul>
-                  The vin is the vehicle identification number of the car2go. The vehicle identification number is a unique id for a
-                  car2go vehicle.
-                  </ul>
-                  </li>
-                  </ul>
+ defines following sub tags:
+ <ul>
+ <li>name - contains the license plate of the vehicle</li>
+ <li>description - contains the address, the interior, the exterior state and the fuel level of the vehicle. The address,
+ the interior state, the exterior state and the fuel are also defined in the extendeddata tag.</li>
+ <li>point - the coordinates of the vehicle</li>
+ <li>extendeddata - the extended data contains the vehicle identification number(vin), the address, the interior state,
+ the exterior state and the fuel level of the vehicle.
+ <ul>
+ The interior and exterior state can contain one of the following values:
+ <li>GOOD</li>
+ <li>UNACCEPTABLE</li>
+ </ul>
+ <ul>
+ The fuel value is the percentage of fuel left in the fuel tank. 100 means the fuel tank is full. A 0 value means the
+ fuel tank is empty.
+ </ul>
+ <ul>
+ The vin is the vehicle identification number of the car2go. The vehicle identification number is a unique id for a
+ car2go vehicle.
+ </ul>
+ </li>
+ </ul>
 
 
 
@@ -76,7 +76,7 @@ The response is provided as KML file which defines a placemark tag for each free
  		<Style id="car2go">
  			<IconStyle>
  				<Icon>
- 					<href>http://www.car2go.com/default/img/backgrounds/Marker_car2go.png
+ 					<href>http://www.car2go.com/common/img/desktop/map_pin_car.png
  					</href>
  				</Icon>
  				<hotSpot y="0.0" x="0.0" />
@@ -112,8 +112,8 @@ The response is provided as KML file which defines a placemark tag for each free
 }}}
 
 A JSON response example:
- 
-                         {{{
+ <p/>
+ {{{
 
  {"placemarks":[{"address":"Reuttier Strasse 133, 89231 Neu-Ulm","coordinates":"[10.023925,48.383125,0]","exterior":"GOOD","fuel":"98","interior":"GOOD","name":"UL-C5704","vin":"WME4513001K155530"}]}
  
@@ -123,10 +123,15 @@ A JSON response example:
 
 
 
+=== TestMode ===
 
 
 
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 17:23
+
+
+
+
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12

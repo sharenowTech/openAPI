@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Get all gas stations
-#sidebar menu
 = Get all gas stations =
 <b>car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API version.</b>
 
@@ -42,12 +42,12 @@ The gas stations can be used to refuel a car2go. The customer can use the car2go
 
 === Response ===
 The KML file defines a placemark tag for each car2go gas station. The placemark tag defines following sub tags:
-                  <ul>
-                  <li>name - The name of the gas station</li>
-                  <li>description - empty</li>
-                  <li>point- the coordinates of the gas station</li>
-                  <li>extendeddata - empty</li>
-                  </ul>
+ <ul>
+ <li>name - The name of the gas station</li>
+ <li>description - empty</li>
+ <li>point- the coordinates of the gas station</li>
+ <li>extendeddata - empty</li>
+ </ul>
 
 
 
@@ -83,8 +83,8 @@ The KML file defines a placemark tag for each car2go gas station. The placemark 
 }}}
 
 A JSON response example:
- 
-                         {{{
+ <p/>
+ {{{
 
  {"placemarks":[{"coordinates":"[9.987988,48.358829,0]","name":"Shell, Hauptstrasse 12"},{"coordinates":"[9.990183,48.404832,0]","name":"Shell, Karlstrasse 38"}]}
  
@@ -94,10 +94,15 @@ A JSON response example:
 
 
 
+=== TestMode ===
 
 
 
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 17:23
+
+
+
+
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12

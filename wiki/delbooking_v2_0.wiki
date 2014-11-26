@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Cancel booking
-#sidebar menu
 = Cancel booking =
 <b>car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API version.</b>
 
@@ -34,35 +34,40 @@ DELETE https://www.car2go.com/api/v2.0/booking/8152
 
 === Response ===
 The cancellation information of a booking consists of:
-                  <ul>
-                  <li>returnValue - see list of return codes below and  <a href="index.html#returnvalues">return values</a> for more details</li>
-                  <li>cancelFeeExists - flag indicating if any cancel fee exists</li>
-                  <li>cancelFee - the amount of the cancellation fee. Period is used as decimal separator.</li>
-                  <li>cancelFeeCurrency - the currency of the cancellation fee</li>
-                  </ul>
+ <ul>
+ <li>returnValue - see list of return codes below and  <a href="index.html#returnvalues">return values</a> for more details</li>
+ <li>cancelFeeExists - flag indicating if any cancel fee exists</li>
+ <li>cancelFee - the amount of the cancellation fee. Period is used as decimal separator.</li>
+ <li>cancelFeeCurrency - the currency of the cancellation fee</li>
+ </ul>
 
 
 
 === Response Examples ===
 A XML response example of cancel booking request:
- 
-                         {{{
+ <p/>
+ {{{
 
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
- <cancelBookingResponse xmlns="http://www.car2go.com/openapi/xmlschema">                          
+ <cancelBookingResponse xmlns="http://www.car2go.com/openapi/xmlschema">
      <returnValue>
-         <code>0</code> 
-         <description>Operation successful.</description> 
+         <code>0</code>
+         <description>Operation successful.</description>
      </returnValue>
      <cancelBooking>
-         <cancelFeeExists>true</cancelFeeExists> 
-         <cancelFee>4.00</cancelFee> 
-         <cancelFeeCurrency>EUR</cancelFeeCurrency> 
+         <cancelFeeExists>true</cancelFeeExists>
+         <cancelFee>4.00</cancelFee>
+         <cancelFeeCurrency>EUR</cancelFeeCurrency>
      </cancelBooking>
  </cancelBookingResponse>
  
 }}}
 
+
+
+
+
+=== TestMode ===
 
 
 
@@ -80,4 +85,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 17:23
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12

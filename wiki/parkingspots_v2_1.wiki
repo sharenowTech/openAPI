@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Get all parking spots
-#sidebar menu
 = Get all parking spots =
 Provides a list of car2go parking spots for a specific location like ulm or austin in KML format. 
 KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. More information about KML can be found here: <a href="http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html" target="_blank">KML Reference at code.google.com</a> 
@@ -43,20 +43,20 @@ The parking spots are especially dedicated for car2go vehicles.
 
 === Response ===
 The KML file defines a placemark tag for each car2go parking spot. The placemark tag defines following sub tags:
-                  <ul>
-                  <li>name - The name of the parking spot</li>
-                  <li>description - contains the total and used capacity of the parking spot</li>
-                  <li>point - the coordinates of the parking spot</li>
-                  <li>extendeddata - contains the usedCapacity and the totalCapacity of the parking spot as well as if the parking spot
-                  has a chargingPole.</li>
-                  </ul>
+ <ul>
+ <li>name - The name of the parking spot</li>
+ <li>description - contains the total and used capacity of the parking spot</li>
+ <li>point - the coordinates of the parking spot</li>
+ <li>extendeddata - contains the usedCapacity and the totalCapacity of the parking spot as well as if the parking spot
+ has a chargingPole.</li>
+ </ul>
 
 
 
 === Response Examples ===
 A KML response example:
- 
-                         {{{
+ <p/>
+ {{{
 
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  <kml xmlns:ns3="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:ns2="http://www.w3.org/2005/Atom"
@@ -100,11 +100,26 @@ A KML response example:
 }}}
 
 A JSON response example:
- 
-                         {{{
+ <p/>
+ {{{
 
   {"placemarks":[{"coordinates":[-97.750983,30.269577,0],"name":"West Ave","totalCapacity":4,"usedCapacity":0,"chargingPole":false},{"coordinates":[-97.74225,30.265976,0],"name":"100 East 4th Street","totalCapacity":4,"usedCapacity":0,"chargingPole":true}]}
  
 }}}
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
+
+
+
+
+=== TestMode ===
+
+
+
+
+
+
+
+
+
+
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12
