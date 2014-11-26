@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Get bookings
-#sidebar menu
 = Get bookings =
 <b>car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API version.</b>
 
@@ -39,38 +39,38 @@ Provides a list of all current bookings of a user. Access to this function is re
 
 === Response ===
 Each booking consists of
-                  <ul>
-                  <li>returnValue - see list of return codes below and <a href="index.html#returnvalues">return values</a> for more details</li>
-                  <li>a unique booking Id</li>
-                  <li>a reservation time: date time string, according to ISO 8601, e.g. 2010-01-21T13:05+01:00</li>
-                  <li>a booking position: longitude and latitude of booking</li>
-                  <li>account information: id and description of the account which will be charged</li>
-                  <li>and vehicle information (optional, depends on whether a vehicles has already been assigned or not)</li>
-                  </ul>
- 
+ <ul>
+ <li>returnValue - see list of return codes below and <a href="index.html#returnvalues">return values</a> for more details</li>
+ <li>a unique booking Id</li>
+ <li>a reservation time: date time string, according to ISO 8601, e.g. 2010-01-21T13:05+01:00</li>
+ <li>a booking position: longitude and latitude of booking</li>
+ <li>account information: id and description of the account which will be charged</li>
+ <li>and vehicle information (optional, depends on whether a vehicles has already been assigned or not)</li>
+ </ul>
+ <p/>
  Vehicle information consists of
-                  <ul>
-                  <li>vin unique, textual vehicle identifier</li>
-                  <li>numberPlate number plate of vehicle, e.g. used to identify car on the street</li>
-                  <li>fuel level</li>
-                  <li>interior</li>
-                  <li>exterior</li>
-                  <li>position: longitude and latitude of vehicle</li>
-                  </ul>
+ <ul>
+ <li>vin unique, textual vehicle identifier</li>
+ <li>numberPlate number plate of vehicle, e.g. used to identify car on the street</li>
+ <li>fuel level</li>
+ <li>interior</li>
+ <li>exterior</li>
+ <li>position: longitude and latitude of vehicle</li>
+ </ul>
 
 
 
 === Response Examples ===
 A XML response example:
- 
-                         {{{
+ <p/>
+ {{{
 
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  <bookingResponse xmlns="http://www.car2go.com/openapi/xmlschema">
      <returnValue>
          <code>0</code>
          <description>Operation successful.</description>
-     </returnValue>  
+     </returnValue>
      <booking>
          <bookingId>4321</bookingId>
          <reservationTime>2001-12-31T12:00:00+01:00</reservationTime>
@@ -79,23 +79,23 @@ A XML response example:
              <longitude>9.9596</longitude>
              <address>Blaubeurer Strasse 128, 89077 Ulm</address>
          </bookingposition>
-         <account>    
+         <account>
              <accountId>5678</accountId>
-             <description>Max Mustermann</description>    
+             <description>Max Mustermann</description>
          </account>
          <vehicle>
              <vin>WME4513001K154451</vin>
              <numberPlate>UL-C5713</numberPlate>
-             <fuel>90</fuel> 
-             <interior>GOOD</interior> 
-             <exterior>GOOD</exterior> 
+             <fuel>90</fuel>
+             <interior>GOOD</interior>
+             <exterior>GOOD</exterior>
              <position>
                  <latitude>48.4008</latitude>
                  <longitude>9.9596</longitude>
                  <address>Blaubeurer Strasse 128, 89077 Ulm</address>
              </position>
          </vehicle>
-     </booking>  
+     </booking>
      <booking>
          <bookingId>4321</bookingId>
          <reservationTime>2001-12-31T13:00:00+01:00</reservationTime>
@@ -106,21 +106,26 @@ A XML response example:
          </bookingposition>
          <account>
              <accountId>5678</accountId>
-             <description>Max Mustermann</description>    
-         </account> 
+             <description>Max Mustermann</description>
+         </account>
      </booking>
  </bookingResponse>
  
 }}}
 
 A JSON response example:
- 
-                         {{{
+ <p/>
+ {{{
 
  {"returnValue":{"code":0,"description":"Operation successful."},"booking":[]}
  
 }}}
 
+
+
+
+
+=== TestMode ===
 
 
 
@@ -139,4 +144,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 17:23
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12

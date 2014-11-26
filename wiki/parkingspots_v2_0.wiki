@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Get all parking spots
-#sidebar menu
 = Get all parking spots =
 <b>car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API version.</b>
 
@@ -42,19 +42,19 @@ The parking spots are especially dedicated for car2go vehicles.
 
 === Response ===
 The KML file defines a placemark tag for each car2go parking spot. The placemark tag defines following sub tags:
-                  <ul>
-                  <li>name - The name of the parking spot</li>
-                  <li>description - contains the total and used capacity of the parking spot</li>
-                  <li>point - the coordinates of the parking spot</li>
-                  <li>extendeddata - contains the usedCapacity and the totalCapacity of the parking spot as separate attributes</li>
-                  </ul>
+ <ul>
+ <li>name - The name of the parking spot</li>
+ <li>description - contains the total and used capacity of the parking spot</li>
+ <li>point - the coordinates of the parking spot</li>
+ <li>extendeddata - contains the usedCapacity and the totalCapacity of the parking spot as separate attributes</li>
+ </ul>
 
 
 
 === Response Examples ===
 A KML response example:
- 
-                         {{{
+ <p/>
+ {{{
 
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  <kml xmlns:ns3="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:ns2="http://www.w3.org/2005/Atom"
@@ -98,8 +98,8 @@ A KML response example:
 }}}
 
 A JSON response example:
- 
-                         {{{
+ <p/>
+ {{{
 
   {"placemarks":[{"coordinates":"[-97.750983,30.269577,0]","name":"West Ave","totalCapacity":"4","usedCapacity":"0"},{"coordinates":"[-97.74225,30.265976,0]","name":"100 East 4th Street","totalCapacity":"4","usedCapacity":"0"}]}
  
@@ -109,10 +109,15 @@ A JSON response example:
 
 
 
+=== TestMode ===
 
 
 
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 17:23
+
+
+
+
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12

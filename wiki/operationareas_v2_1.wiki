@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Get the operating area
-#sidebar menu
 = Get the operating area =
 Provides a list of all zones forming the car2go operating area for a given location like ulm or austin in KML format. 
 KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. More information about KML can be found here: <a href="http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html" target="_blank">KML Reference at code.google.com</a> 
@@ -13,11 +13,11 @@ KML is a file format used to display geographic data in an Earth browser such as
 
 === Parameters ===
 || *Name* || *Mandatory* || *Description* ||
-|| loc || true || location identifier string of the user's home location, e.g. "ulm", "austin". ||
-|| oauth_consumer_key || true || your assigned oauth consumer key ||
-|| format || false || defines response format. Value "json" => JSON format, otherwise xml format is used ||
-|| callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
-|| test || false || has currently no effect ||
+|| loc || true || Location identifier string of the user's home location, e.g. "ulm", "austin". ||
+|| oauth_consumer_key || true || Your assigned oauth consumer key ||
+|| format || false || Defines response format. Value "json" => JSON format, otherwise XML format is used. ||
+|| callback || false || Defines JSONP (JSON with Padding) callback function used as wrapper. ||
+|| test || false || Has currently no effect. ||
 
 
 
@@ -37,12 +37,12 @@ GET http://www.car2go.com/api/v2.1/operationareas?oauth_consumer_key=consumerkey
 
 === Response ===
 The response is provided as KML file which defines a placemark tag for each zone contained in the operating area.
-                  The placemark has a name and is styled according to its zoneType:
-                  <ul>
-                  <li>included - zones included in the operating area</li>
-                  <li>excluded - zones excluded from the operating area (no parking allowed)</li>
-                  <li>parking - zone is a dedicated car2go parking spot</li>
-                  </ul>
+ The placemark has a name and is styled according to its zoneType:
+ <ul>
+ <li>included - zones included in the operating area</li>
+ <li>excluded - zones excluded from the operating area (no parking allowed)</li>
+ <li>parking - zone is a dedicated car2go parking spot</li>
+ </ul>
 
 
 
@@ -78,7 +78,7 @@ The response is provided as KML file which defines a placemark tag for each zone
  		        <Data name="zoneType">
  		            <value>excluded</value>
  		        </Data>
- 		    </ExtendedData>	
+ 		    </ExtendedData>
  			<LineString>
  				<coordinates>10.02739,48.458917,0 10.02739,48.468917,0 10.041390000000002,48.468917,0 10.041390000000002,48.458917,0</coordinates>
  		</LineString>
@@ -89,12 +89,20 @@ The response is provided as KML file which defines a placemark tag for each zone
 }}}
 
 A JSON response example:
-
+ <p/>
  {{{
 
  {"placemarks":[{"coordinates":[10.02739,48.458916,0,10.02739,48.468918,0],"name":"a zone","zoneType":"excluded"}]}
  
 }}}
+
+
+
+
+
+=== TestMode ===
+
+
 
 
 === Return Codes ===
@@ -107,4 +115,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 16.07.12 10:48
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12

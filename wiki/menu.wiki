@@ -21,3 +21,4 @@
     * [createbooking_v2_1 Create booking]
     * [getbooking_v2_1 Get booking]
     * [delbooking_v2_1 Cancel booking]    
+    * [rentals_v2_1 Get recent rentals]

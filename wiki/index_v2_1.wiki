@@ -1,5 +1,5 @@
-#summary car2go API Documentation - Index API 2.0
-#sidebar menu
+#sidebar menu 
+#summary car2go API Documentation - Index API 2.0 
 = car2go API v2.1 =
 == Endpoints ==
 || *Name* || *Method* || *Url* || *Access* ||
@@ -9,6 +9,7 @@
 || [gasstations_v2_1 Get all gas stations] ||GET || http://www.car2go.com/api/v2.1/gasstations || public ||
 || [vehicles_v2_1 Get all free vehicles] ||GET || http://www.car2go.com/api/v2.1/vehicles || public ||
 || [accounts_v2_1 Get all accounts] ||GET || https://www.car2go.com/api/v2.1/accounts || protected ||
+|| [rentals_v2_1 Get recent rentals] ||GET || https://www.car2go.com/api/v2.1/rentals || protected ||
 || [getbookings_v2_1 Get bookings] ||GET || https://www.car2go.com/api/v2.1/bookings || protected ||
 || [createbooking_v2_1 Create booking] ||POST || https://www.car2go.com/api/v2.1/bookings || protected ||
 || [getbooking_v2_1 Get booking] ||GET || https://www.car2go.com/api/v2.1/booking || protected ||
@@ -50,4 +51,4 @@ Some API functions result in KML response. More information can be found here: [
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 16.07.12 10:48
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12

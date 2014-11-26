@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - OAuth
-#sidebar menu
 = Access protected functions via OAuth =
 Some API functions are marked as protected. You need to authenticate via OAuth to access these functions.
 
@@ -56,7 +56,7 @@ To register as consumer at car2go send an email to [mailto:openapi@car2go.com op
   * Email
   * Country you reside in
   * Type of project: Do you develop in private/for education or studies/for a company/...
-  * Project or product name (*Note:* This information is required!)
+  * Project or product name
   * Project description (what's the intend and goal, which functionality is focussed)
   * Target Platform/Technology (Web Application/Mobile App/iOS/Android/Nokia Sxyz/Blackberry/Palm/RichClient/...)
 
@@ -66,11 +66,10 @@ To register as consumer at car2go send an email to [mailto:openapi@car2go.com op
   * Envisioned development timeline (when do you want to release the app?)
   * CallbackURL for Applicationredirect (optional)
   * For potential future linkin in car2go portal: URL, Email, Icon
+  * Info whether test user is required
   * Address
   
 As soon as we receive the details, we will complete the registration process and you're ready to go!
-
-
 
 
 (c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 16:28

@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Get all gas stations
-#sidebar menu
 = Get all gas stations =
 Provides a list of car2go gas stations in context of specific location like ulm or austin in KML format. 
 KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. More information about KML can be found here: <a href="http://code.google.com/intl/de/apis/kml/documentation/kmlreference.html" target="_blank">KML Reference at code.google.com</a> 
@@ -43,12 +43,12 @@ The gas stations can be used to refuel a car2go. The customer can use the car2go
 
 === Response ===
 The KML file defines a placemark tag for each car2go gas station. The placemark tag defines following sub tags:
-                  <ul>
-                  <li>name - The name of the gas station</li>
-                  <li>description - empty</li>
-                  <li>point- the coordinates of the gas station</li>
-                  <li>extendeddata - empty</li>
-                  </ul>
+ <ul>
+ <li>name - The name of the gas station</li>
+ <li>description - empty</li>
+ <li>point- the coordinates of the gas station</li>
+ <li>extendeddata - empty</li>
+ </ul>
 
 
 
@@ -84,11 +84,26 @@ The KML file defines a placemark tag for each car2go gas station. The placemark 
 }}}
 
 A JSON response example:
- 
-                         {{{
+ <p/>
+ {{{
 
  {"placemarks":[{"coordinates":[9.987988,48.358829,0],"name":"Shell, Hauptstrasse 12"},{"coordinates":[9.990183,48.404832,0],"name":"Shell, Karlstrasse 38"}]}
  
 }}}
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
+
+
+
+
+=== TestMode ===
+
+
+
+
+
+
+
+
+
+
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12

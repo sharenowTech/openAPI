@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Create booking
-#sidebar menu
 = Create booking =
 Create a new short-term booking for a user. Access to this function is restricted. See <a href="../oauth.html">OAuth documentation</a> for more details.
 
@@ -11,7 +11,6 @@ Create a new short-term booking for a user. Access to this function is restricte
 
 === Parameters ===
 || *Name* || *Mandatory* || *Description* ||
-|| loc || true || location identifier string of the user's home location, e.g. "ulm", "austin". ||
 || format || false || defines response format. Value "json" => JSON format, otherwise xml format is used ||
 || callback || false || defines JSONP (JSON with Padding) callback function used as wrapper ||
 || vin || true || VIN of the vehicle to be booked ||
@@ -24,7 +23,7 @@ Create a new short-term booking for a user. Access to this function is restricte
 === Request Examples ===
 {{{
 
- POST https://www.car2go.com/api/v2.1/bookings?loc=ulm&vin=WME4513001K153738&account=1001
+ POST https://www.car2go.com/api/v2.1/bookings?vin=WME4513001K153738&account=1001
  
 }}}
 
@@ -36,9 +35,16 @@ Create a new short-term booking for a user. Access to this function is restricte
 Similar to response provided by <a href="getbookings.html">Get Bookings</a> though content is limited to booking created
 
 
-=== Test Mode ===
-A successful test booking requires a valid test account and a valid vin.
-*Note*: No real booking is created. Therefore you won't be charged for test bookings. Furthermore the booking won't be returned by <a href="getbookings.html">Get Bookings</a>.
+
+=== Response Examples ===
+
+
+
+
+=== TestMode ===
+A successful test booking requires a valid test account and a valid vin. <br/>
+ Note: No real booking is created. Therefore you won't be charged for test bookings. <br/>
+ Furthermore the booking won't be returned by <a href="getbookings.html">Get Bookings</a>.
 
 
 
@@ -61,4 +67,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 03.02.12 08:59
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12

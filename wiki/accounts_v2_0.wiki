@@ -1,5 +1,5 @@
+#sidebar menu 
 #summary car2go API Documentation - Get all accounts
-#sidebar menu
 = Get all accounts =
 <b>car2go API v2.0 is deprecated. See [index_v2_1 v2.1] for the current car2go API version.</b>
 
@@ -35,25 +35,25 @@ GET https://www.car2go.com/api/v2.0/accounts?loc=austin
 
 === Response ===
 The XML file defines a accountResponse tag to receive all valid accounts for any car2go user. The accountResponse tag
-                  defines following sub tags:
-                  <ul>
-                  <li>returnValue - see list of return codes below and <a href="index.html#returnvalues">return values</a> for more details</li>
-                  
-                  <li>account - only for successful return value, i.e. code = 0. Contains a list of all found accounts with following sub
-                  tags:
-                  <ul>
-                  <li>accountId - the unique identifier of this account</li>
-                  <li>description - detailed description of the account</li>
-                  </ul>
-                  </li>
-                  </ul>
+ defines following sub tags:
+ <ul>
+ <li>returnValue - see list of return codes below and <a href="index.html#returnvalues">return values</a> for more details</li>
+ <p/>
+ <li>account - only for successful return value, i.e. code = 0. Contains a list of all found accounts with following sub
+ tags:
+ <ul>
+ <li>accountId - the unique identifier of this account</li>
+ <li>description - detailed description of the account</li>
+ </ul>
+ </li>
+ </ul>
 
 
 
 === Response Examples ===
 A XML response example where user has valid account:
- 
-                         {{{
+ <p/>
+ {{{
 
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  <accountResponse xmlns="http://www.car2go.com/openapi/xmlschema">
@@ -66,12 +66,12 @@ A XML response example where user has valid account:
          <description></description>
      </account>
  </accountResponse>
-
+ 
 }}}
 
 A XML response example where user does not have valid account:
- 
-                         {{{
+ <p/>
+ {{{
 
  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
  <accountResponse xmlns="http://www.car2go.com/openapi/xmlschema">
@@ -80,17 +80,22 @@ A XML response example where user does not have valid account:
          <description>No valid accounts found.</description>
      </returnValue>
  </accountResponse>
-
+ 
 }}}
 
 A JSON response example:
- 
-                         {{{
+ <p/>
+ {{{
 
  {"returnValue":{"code":0,"description":"Operation successful."},"account":[{"accountId":994,"description":"Max Mustermann11585"}]}
-
+ 
 }}}
 
+
+
+
+
+=== TestMode ===
 
 
 
@@ -100,7 +105,6 @@ The following return codes may occur:
 || *Code* || *Description* || *Note* ||
 || 0 || Operation successful. ||  ||
 || 1 || Location invalid. ||  ||
-|| 2 || !UserId invalid. ||  ||
 || 3 || No valid accounts found. ||  The user has no valid accounts. This occurs when the user has no account and is not invited to any accounts. ||
 
 
@@ -108,4 +112,4 @@ The following return codes may occur:
 
 
 
-(c) 2010 car2go GmbH. All rights reserved. Generated 17.08.11 17:23
+(c) 2010 car2go GmbH. All rights reserved. Generated 06.10.14 10:12
