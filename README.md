@@ -1,7 +1,7 @@
 # car2go API Documentation
 The car2go API offers access to up-to-date car2go information such as vehicles available, parking spots and gas stations. 
 
-Furthermore we offer access to protected functions for registered developers. This way you can write applications that manages bookings for a user.
+Furthermore we offer access to protected functions for registered developers. For details see [Access protected Functions svia OAuth 1.0](../../wiki/Access-protected-Functions-via-OAuth-1.0). This way you can write applications that manages bookings for a user.
 
 ## v2.1
 
