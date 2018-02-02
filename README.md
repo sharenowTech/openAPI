@@ -8,7 +8,7 @@ The car2go API offers access to up-to-date car2go information such as parking sp
 * [Get Gasstations](../../wiki/v2.1_gasstations)
 * [Get Parkingspots](../../wiki/v2.1_parkingspots)
 
-Details on how to deeplink into the car2go app can be found [here](../wiki/Deeplinks-to-car2go-app).
+Details on how to deeplink into the car2go app can be found [here](../../wiki/Deeplinks-to-car2go-app).
 
 Please ensure to comply to our [terms of use](https://www.car2go.com/api/tou.htm) when using the API.
 
