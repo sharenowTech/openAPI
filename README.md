@@ -12,4 +12,4 @@ Details on how to deeplink into the car2go app can be found [here](../../wiki/De
 
 Please ensure to comply to our [terms of use](https://www.car2go.com/api/tou.htm) when using the API.
 
-(c) 2010 car2go GmbH. All rights reserved.
+(c) 2019 car2go GmbH. All rights reserved.
