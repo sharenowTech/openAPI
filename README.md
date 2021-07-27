@@ -1,5 +1,7 @@
-# car2go API Documentation
-The car2go API offers access to up-to-date car2go information such as parking spots and gas stations. 
+**❗ The API is deprecated and will be replaced.**
+
+## car2go API Documentation
+The car2go API offers access to up-to-date car2go information such as parking spots and gas stations.
 
 ### Public Functions
 
